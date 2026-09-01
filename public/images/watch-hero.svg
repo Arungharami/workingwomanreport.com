@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="900" viewBox="0 0 1600 900" role="img" aria-label="Working Woman Report video library editorial placeholder">
+  <rect width="1600" height="900" fill="#11100f"/>
+  <path d="M0 0h1600v760H0z" fill="#171514"/>
+  <path d="M100 120h1400v560H100z" fill="#191715"/>
+  <path d="M100 120h1400v560H100z" fill="#9f1d35" opacity=".06"/>
+  <circle cx="800" cy="400" r="132" fill="#f7f5f0" opacity=".95"/>
+  <path d="M752 322v156l138-78z" fill="#171514"/>
+  <path d="M100 620h1400v10H100z" fill="#3a332d"/>
+  <path d="M100 620h460v10H100z" fill="#9f1d35"/>
+  <path d="M0 800h1600v100H0z" fill="#0f6b68"/>
+  <path d="M120 838h300v24H120zM460 838h240v24H460z" fill="#f7f5f0" opacity=".9"/>
+</svg>

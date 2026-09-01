@@ -4,7 +4,9 @@ import { navItems, siteConfig } from "@/lib/site";
 
 export function Footer() {
   const year = new Date().getFullYear();
-  const socials = Object.values(siteConfig.social).filter((item) => item.configured);
+  const socials = Object.values(siteConfig.social).filter(
+    (item) => item.configured && item.url.startsWith("http"),
+  );
 
   return (
     <footer className="mt-20 border-t border-[var(--line)] bg-[var(--paper)]">

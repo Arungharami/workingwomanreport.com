@@ -9,14 +9,16 @@ import { SocialFollow } from "@/components/social-follow";
 import { StoryCard } from "@/components/story-card";
 import { Eyebrow, SectionHeader } from "@/components/ui";
 import { VideoEmbed } from "@/components/video-embed";
-import { getPublishedStories, getWeeklyStories, getWeeklyStory } from "@/lib/content";
+import { getPublishedStories, getPublishedWeeklyStories, getWeeklyStory } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { articleJsonLd, videoJsonLd } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
-  return getWeeklyStories().map((story) => ({ slug: story.slug }));
+  return getPublishedWeeklyStories().map((story) => ({ slug: story.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
@@ -72,7 +74,9 @@ export default async function WeeklyStoryPage({ params }: Props) {
               {story.dek}
             </p>
             <div className="mt-5 flex flex-wrap gap-x-5 gap-y-2 text-sm text-[var(--ink-muted)]">
-              <span>By {story.reporter}</span>
+              <span>
+                By <Link href="/people/allison-haunss">{story.reporter}</Link>
+              </span>
               <span>Published {formatDate(story.publishDate)}</span>
               {story.updatedDate ? <span>Updated {formatDate(story.updatedDate)}</span> : null}
             </div>

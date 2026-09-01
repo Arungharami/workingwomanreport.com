@@ -22,7 +22,7 @@ export function Header() {
             Working Woman Report
           </span>
           <span className="text-xs uppercase tracking-[0.2em] text-[var(--ink-muted)]">
-            Television + Editorial Newsroom
+            {siteConfig.tagline}
           </span>
         </Link>
         <nav className="hidden items-center gap-4 text-sm font-medium lg:flex">

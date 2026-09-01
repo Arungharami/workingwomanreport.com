@@ -40,8 +40,7 @@ export default async function SearchPage({ searchParams }: Props) {
       <div className="mt-10 grid gap-4">
         {!q ? (
           <p className="text-[var(--ink-muted)]">
-            Search will include approved weekly reports, stories, categories, tags, and
-            people.
+            Search will include approved weekly reports, stories, categories, tags, and people.
           </p>
         ) : null}
         {q && !results.length ? (

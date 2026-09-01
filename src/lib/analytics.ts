@@ -1,5 +1,6 @@
 export type AnalyticsEvent =
   | "article_view"
+  | "weekly_story_view"
   | "video_play"
   | "youtube_click"
   | "instagram_click"
@@ -7,10 +8,11 @@ export type AnalyticsEvent =
   | "tiktok_click"
   | "x_click"
   | "newsletter_signup"
-  | "share_click";
+  | "share_click"
+  | "search"
+  | "related_story_click";
 
 export function trackEvent(event: AnalyticsEvent, payload: Record<string, string> = {}) {
-  if (process.env.NODE_ENV !== "production") {
-    console.info("[analytics:dev]", event, payload);
-  }
+  void event;
+  void payload;
 }

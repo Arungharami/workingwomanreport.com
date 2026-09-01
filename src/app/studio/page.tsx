@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { StudioPanel } from "@/components/studio-panel";
-import { getCurrentWeeklyStory, getSocialPackage } from "@/lib/content";
+import { getCurrentStudioWeeklyStory, getSocialPackage } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Studio",
@@ -27,7 +27,15 @@ export default function StudioPage() {
     );
   }
 
-  const story = getCurrentWeeklyStory();
+  const story = getCurrentStudioWeeklyStory();
+  if (!story) {
+    return (
+      <div className="container-shell py-10">
+        <h1 className="font-serif text-5xl">No weekly package found</h1>
+      </div>
+    );
+  }
+
   const socialPackage = getSocialPackage(story.slug);
 
   if (!socialPackage) {

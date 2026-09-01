@@ -6,14 +6,16 @@ import { JsonLd } from "@/components/json-ld";
 import { NewsletterSignup } from "@/components/newsletter-signup";
 import { ShareTools } from "@/components/share-tools";
 import { SectionHeader } from "@/components/ui";
-import { getStories, getStory } from "@/lib/content";
+import { getPublishedStories, getStory } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { articleJsonLd } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
+export const dynamicParams = false;
+
 export function generateStaticParams() {
-  return getStories().map((story) => ({ slug: story.slug }));
+  return getPublishedStories().map((story) => ({ slug: story.slug }));
 }
 
 export async function generateMetadata({ params }: Props): Promise<Metadata> {

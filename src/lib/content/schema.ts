@@ -1,5 +1,8 @@
 import { z } from "zod";
 
+const emptyStringToUndefined = (value: unknown) => (value === "" ? undefined : value);
+const optionalUrl = z.preprocess(emptyStringToUndefined, z.string().url().optional());
+
 export const contentStatusSchema = z.enum([
   "idea",
   "research",
@@ -14,7 +17,7 @@ export const contentStatusSchema = z.enum([
 
 export const sourceSchema = z.object({
   title: z.string(),
-  url: z.string().url().optional(),
+  url: optionalUrl,
   publisher: z.string().optional(),
   date: z.string().optional(),
   type: z
@@ -53,13 +56,13 @@ export const weeklyStorySchema = z.object({
       title: z.string().optional(),
       duration: z.string().optional(),
       captionUrl: z.string().optional(),
-      embedUrl: z.string().url().optional(),
+      embedUrl: optionalUrl,
       chapters: z.array(z.string()).default([]),
       relatedVideos: z
         .array(
           z.object({
             title: z.string(),
-            url: z.string().url(),
+            url: optionalUrl,
             platform: z.string().default("YouTube"),
           }),
         )
@@ -76,13 +79,13 @@ export const weeklyStorySchema = z.object({
     })
     .optional(),
   youtubeVideoId: z.string().optional(),
-  youtubeShortUrl: z.string().url().optional(),
-  instagramUrl: z.string().url().optional(),
-  facebookUrl: z.string().url().optional(),
-  tiktokUrl: z.string().url().optional(),
-  xUrl: z.string().url().optional(),
+  youtubeShortUrl: optionalUrl,
+  instagramUrl: optionalUrl,
+  facebookUrl: optionalUrl,
+  tiktokUrl: optionalUrl,
+  xUrl: optionalUrl,
   sources: z.array(sourceSchema).default([]),
-  keyTakeaways: z.array(z.string()).min(1),
+  keyTakeaways: z.array(z.string()).default([]),
   articleBody: z.array(bodyBlockSchema),
   transcript: z.string().optional(),
   quotes: z.array(z.object({ quote: z.string(), attribution: z.string() })).default([]),

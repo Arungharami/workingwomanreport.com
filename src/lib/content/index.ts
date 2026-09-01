@@ -8,6 +8,7 @@ import {
   type Story,
   type WeeklyStory,
 } from "./schema";
+import { getPeople } from "@/lib/people";
 
 const contentRoot = path.join(process.cwd(), "content");
 
@@ -101,8 +102,16 @@ export function getSearchIndex() {
     category: item.category,
     tags: item.tags,
   }));
+  const people = getPeople().map((item) => ({
+    type: "Person",
+    title: item.name,
+    dek: item.shortBio,
+    href: `/people/${item.slug}`,
+    category: "People",
+    tags: item.areasOfCoverage,
+  }));
 
-  return [...weekly, ...stories];
+  return [...weekly, ...stories, ...people];
 }
 
 export function searchContent(query: string) {

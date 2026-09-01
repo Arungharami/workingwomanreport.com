@@ -105,20 +105,18 @@ export default function Home() {
         />
         <div className="grid gap-3 sm:grid-cols-2 lg:grid-cols-5">
           {Object.values(siteConfig.social)
-            .slice(0, 5)
+            .filter((item) => item.configured && item.url.startsWith("http"))
             .map((item) => {
               const Icon = item.icon;
               return (
                 <Link
-                  href={item.configured ? item.url : "/studio"}
+                  href={item.url}
                   key={item.label}
                   className="border border-[var(--line)] bg-[var(--paper)] p-4"
                 >
                   <Icon size={22} />
                   <h3 className="mt-4 font-semibold">{item.label}</h3>
-                  <p className="mt-2 text-sm text-[var(--ink-muted)]">
-                    {item.configured ? "Configured channel" : "Awaiting confirmed URL"}
-                  </p>
+                  <p className="mt-2 text-sm text-[var(--ink-muted)]">Configured channel</p>
                 </Link>
               );
             })}

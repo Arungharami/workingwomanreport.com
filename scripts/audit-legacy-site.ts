@@ -11,7 +11,10 @@ function textBetween(html: string, tag: string) {
 
 function metaContent(html: string, name: string) {
   const match = html.match(
-    new RegExp(`<meta[^>]+(?:name|property)=["']${name}["'][^>]+content=["']([^"']+)["']`, "i"),
+    new RegExp(
+      `<meta[^>]+(?:name|property)=["']${name}["'][^>]+content=["']([^"']+)["']`,
+      "i",
+    ),
   );
   return match?.[1] ?? "";
 }
@@ -50,7 +53,8 @@ async function main() {
         originalUrl: url,
         title: textBetween(html, "title"),
         description: metaContent(html, "description"),
-        canonicalUrl: html.match(/rel=["']canonical["'][^>]+href=["']([^"']+)["']/i)?.[1] ?? "",
+        canonicalUrl:
+          html.match(/rel=["']canonical["'][^>]+href=["']([^"']+)["']/i)?.[1] ?? "",
         discoveredAt: new Date().toISOString(),
       });
       for (const href of linksFrom(html).slice(0, 20)) {

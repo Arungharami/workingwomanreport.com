@@ -9,11 +9,7 @@ import { SocialFollow } from "@/components/social-follow";
 import { StoryCard } from "@/components/story-card";
 import { Eyebrow, SectionHeader } from "@/components/ui";
 import { VideoEmbed } from "@/components/video-embed";
-import {
-  getPublishedStories,
-  getWeeklyStories,
-  getWeeklyStory,
-} from "@/lib/content";
+import { getPublishedStories, getWeeklyStories, getWeeklyStory } from "@/lib/content";
 import { formatDate } from "@/lib/format";
 import { articleJsonLd, videoJsonLd } from "@/lib/seo";
 

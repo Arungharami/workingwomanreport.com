@@ -4,7 +4,8 @@ import { siteConfig } from "@/lib/site";
 
 export const metadata: Metadata = {
   title: "Contact",
-  description: "Contact Working Woman Report for editorial, booking, partnership, and production inquiries.",
+  description:
+    "Contact Working Woman Report for editorial, booking, partnership, and production inquiries.",
 };
 
 export default function ContactPage() {

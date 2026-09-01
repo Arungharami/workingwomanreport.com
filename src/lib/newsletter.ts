@@ -1,10 +1,7 @@
 export type NewsletterSignupResult =
-  | { ok: true; message: string }
-  | { ok: false; message: string };
+  { ok: true; message: string } | { ok: false; message: string };
 
-export async function subscribeToNewsletter(
-  email: string,
-): Promise<NewsletterSignupResult> {
+export async function subscribeToNewsletter(email: string): Promise<NewsletterSignupResult> {
   if (!process.env.NEWSLETTER_PROVIDER) {
     return {
       ok: false,
@@ -16,7 +13,6 @@ export async function subscribeToNewsletter(
   void email;
   return {
     ok: false,
-    message:
-      "Newsletter adapter is ready, but no provider implementation has been selected.",
+    message: "Newsletter adapter is ready, but no provider implementation has been selected.",
   };
 }

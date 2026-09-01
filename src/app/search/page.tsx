@@ -7,7 +7,8 @@ type Props = { searchParams: Promise<{ q?: string }> };
 
 export const metadata: Metadata = {
   title: "Search",
-  description: "Search Working Woman Report weekly reports, stories, categories, tags, and people.",
+  description:
+    "Search Working Woman Report weekly reports, stories, categories, tags, and people.",
 };
 
 export default async function SearchPage({ searchParams }: Props) {

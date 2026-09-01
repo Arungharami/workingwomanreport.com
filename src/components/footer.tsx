@@ -12,8 +12,8 @@ export function Footer() {
         <div>
           <h2 className="font-serif text-3xl">{siteConfig.name}</h2>
           <p className="mt-4 max-w-md text-sm leading-6 text-[var(--ink-muted)]">
-            A women-focused television and editorial newsroom built around one
-            authoritative weekly reporting package.
+            A women-focused television and editorial newsroom built around one authoritative
+            weekly reporting package.
           </p>
           <div className="mt-5 flex gap-2">
             {socials.map((item) => {

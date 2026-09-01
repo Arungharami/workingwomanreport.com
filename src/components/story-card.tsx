@@ -32,9 +32,7 @@ export function StoryCard({ story, href }: { story: CardStory; href: string }) {
           {story.title}
         </h3>
         <p className="mt-2 text-sm leading-6 text-[var(--ink-muted)]">{story.dek}</p>
-        <p className="mt-3 text-xs text-[var(--ink-muted)]">
-          {formatDate(story.publishDate)}
-        </p>
+        <p className="mt-3 text-xs text-[var(--ink-muted)]">{formatDate(story.publishDate)}</p>
       </Link>
     </article>
   );

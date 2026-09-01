@@ -30,13 +30,7 @@ const checklist = [
   "Record analytics",
 ];
 
-function PreviewCard({
-  title,
-  value,
-}: {
-  title: string;
-  value: string | string[];
-}) {
+function PreviewCard({ title, value }: { title: string; value: string | string[] }) {
   const text = Array.isArray(value) ? value.join("\n") : value;
   return (
     <section className="border border-[var(--line)] bg-[var(--paper)] p-4">
@@ -97,12 +91,21 @@ export function StudioPanel({
       <section>
         <h2 className="font-serif text-3xl">Social Previews</h2>
         <div className="mt-4 grid gap-4 lg:grid-cols-2">
-          <PreviewCard title="YouTube" value={`${socialPackage.youtube.title}\n\n${socialPackage.youtube.description}`} />
+          <PreviewCard
+            title="YouTube"
+            value={`${socialPackage.youtube.title}\n\n${socialPackage.youtube.description}`}
+          />
           <PreviewCard title="Instagram" value={socialPackage.instagram.caption} />
           <PreviewCard title="Facebook" value={socialPackage.facebook.post} />
-          <PreviewCard title="TikTok" value={`${socialPackage.tiktok.hook}\n\n${socialPackage.tiktok.caption}`} />
+          <PreviewCard
+            title="TikTok"
+            value={`${socialPackage.tiktok.hook}\n\n${socialPackage.tiktok.caption}`}
+          />
           <PreviewCard title="X Thread" value={socialPackage.x.thread} />
-          <PreviewCard title="Newsletter" value={`${socialPackage.newsletter.subject}\n\n${socialPackage.newsletter.body}`} />
+          <PreviewCard
+            title="Newsletter"
+            value={`${socialPackage.newsletter.subject}\n\n${socialPackage.newsletter.body}`}
+          />
         </div>
       </section>
     </div>

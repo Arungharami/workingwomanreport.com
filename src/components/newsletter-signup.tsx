@@ -16,9 +16,7 @@ export function NewsletterSignup({ compact = false }: { compact?: boolean }) {
         );
       }}
     >
-      <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">
-        Newsletter
-      </h3>
+      <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">Newsletter</h3>
       <p className="mt-3 text-sm leading-6 opacity-80">
         Get the weekly report, video links, and social package highlights.
       </p>

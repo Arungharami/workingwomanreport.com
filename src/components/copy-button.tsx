@@ -3,13 +3,7 @@
 import { Clipboard } from "lucide-react";
 import { useState } from "react";
 
-export function CopyButton({
-  value,
-  label = "Copy",
-}: {
-  value: string;
-  label?: string;
-}) {
+export function CopyButton({ value, label = "Copy" }: { value: string; label?: string }) {
   const [copied, setCopied] = useState(false);
 
   return (

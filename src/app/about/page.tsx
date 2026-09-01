@@ -16,11 +16,7 @@ export default function AboutPage() {
 
   return (
     <div className="container-shell py-10">
-      <SectionHeader
-        eyebrow="About"
-        title={person.name}
-        dek={person.role}
-      />
+      <SectionHeader eyebrow="About" title={person.name} dek={person.role} />
       <div className="grid gap-10 lg:grid-cols-[0.65fr_0.35fr]">
         <section className="article-body">
           <h2>Biography</h2>
@@ -29,17 +25,17 @@ export default function AboutPage() {
           ))}
           <h2>Working Woman Report Mission</h2>
           <p>
-            Working Woman Report covers entrepreneurship, business, careers,
-            money, lifestyle, health, technology, entertainment, and success
-            stories through a television-ready weekly reporting model.
+            Working Woman Report covers entrepreneurship, business, careers, money, lifestyle,
+            health, technology, entertainment, and success stories through a television-ready
+            weekly reporting model.
           </p>
         </section>
         <aside className="space-y-8">
           <div className="border-t border-[var(--line)] pt-4">
             <h2 className="font-serif text-2xl">Verified Coverage Areas</h2>
             <p className="mt-3 text-sm leading-6 text-[var(--ink-muted)]">
-              Journalism, television reporting, founder interviews, business,
-              careers, and women-focused success stories.
+              Journalism, television reporting, founder interviews, business, careers, and
+              women-focused success stories.
             </p>
           </div>
           <div className="border-t border-[var(--line)] pt-4">

@@ -11,10 +11,7 @@ import {
 
 const contentRoot = path.join(process.cwd(), "content");
 
-function readJsonDirectory<T>(
-  directory: string,
-  parse: (input: unknown) => T,
-): T[] {
+function readJsonDirectory<T>(directory: string, parse: (input: unknown) => T): T[] {
   const dir = path.join(contentRoot, directory);
   if (!fs.existsSync(dir)) {
     return [];
@@ -31,15 +28,12 @@ function readJsonDirectory<T>(
 
 function newestFirst<T extends { publishDate: string }>(items: T[]) {
   return [...items].sort(
-    (a, b) =>
-      new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime(),
+    (a, b) => new Date(b.publishDate).getTime() - new Date(a.publishDate).getTime(),
   );
 }
 
 export function getWeeklyStories(): WeeklyStory[] {
-  return newestFirst(
-    readJsonDirectory("weekly", (item) => weeklyStorySchema.parse(item)),
-  );
+  return newestFirst(readJsonDirectory("weekly", (item) => weeklyStorySchema.parse(item)));
 }
 
 export function getPublishedWeeklyStories(): WeeklyStory[] {

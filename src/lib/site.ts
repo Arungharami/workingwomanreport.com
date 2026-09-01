@@ -1,11 +1,4 @@
-import {
-  Camera,
-  CirclePlay,
-  MessageCircle,
-  Music2,
-  Play,
-  Send,
-} from "lucide-react";
+import { Camera, CirclePlay, MessageCircle, Music2, Play, Send } from "lucide-react";
 
 export const siteConfig = {
   name: "Working Woman Report",

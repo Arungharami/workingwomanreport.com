@@ -6,7 +6,8 @@ import { getCurrentWeeklyStory, getWeeklyStories } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Watch",
-  description: "Working Woman Report video hub for full weekly segments, shorts, and archive clips.",
+  description:
+    "Working Woman Report video hub for full weekly segments, shorts, and archive clips.",
 };
 
 export default function WatchPage() {

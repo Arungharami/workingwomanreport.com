@@ -1,6 +1,31 @@
 {
   "name": "Allison Haunss",
+  "slug": "allison-haunss",
   "role": "Founder / Reporter",
+  "shortBio": "Founder and reporter for Working Woman Report.",
+  "fullBio": [
+    "Allison Haunss is the founder and reporter for Working Woman Report.",
+    "Additional biography details, awards, employer history, and TV affiliations should be added only after verification."
+  ],
+  "photo": "",
+  "photoAlt": "",
+  "email": "editorial@workingwomanreport.com",
+  "website": "https://workingwomanreport.com",
+  "socials": {
+    "x": "https://x.com/WorkingWomanTV"
+  },
+  "areasOfCoverage": [
+    "Entrepreneurship",
+    "Business",
+    "Careers",
+    "Money",
+    "Lifestyle",
+    "Health",
+    "Technology",
+    "Entertainment",
+    "Success stories"
+  ],
+  "featuredStories": [],
   "verifiedBio": [
     "Founder and reporter for Working Woman Report.",
     "Known public materials describe Allison Haunss as host/reporter for Working Woman Report."

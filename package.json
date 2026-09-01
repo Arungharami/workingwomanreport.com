@@ -6,7 +6,12 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "format": "prettier --check .",
+    "audit:legacy": "tsx scripts/audit-legacy-site.ts",
+    "migrate:legacy": "tsx scripts/migrate-legacy-content.ts"
   },
   "dependencies": {
     "lucide-react": "^1.38.0",

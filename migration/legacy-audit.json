@@ -1,0 +1,524 @@
+{
+  "baseUrl": "https://workingwomanreport.com",
+  "records": [
+    {
+      "originalUrl": "https://workingwomanreport.com",
+      "title": "Working Woman Report -",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/",
+      "discoveredAt": "2026-09-01T04:18:22.490Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/category/the-show/",
+      "title": "THE SHOW &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:22.789Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/author/ahunss/",
+      "title": "Working Woman Report &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:23.122Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-content/uploads/2022/05/logo-1-2.png",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:23.512Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/feed/",
+      "title": "Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:24.426Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/feed/rss/",
+      "title": "Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:24.660Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/feed/atom/",
+      "title": "Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:24.798Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/xmlrpc.php",
+      "error": "Failed https://workingwomanreport.com/xmlrpc.php: 405"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/comments/feed/",
+      "title": "Comments for Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:25.355Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/7-2/feed/",
+      "title": "Comments on: Home",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:25.694Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingwomanreport.com%2F",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:26.209Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingwomanreport.com%2F&#038;format=xml",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:26.783Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=6.1.7",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:27.228Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-content/plugins/advanced-google-recaptcha/assets/css/captcha.min.css?ver=1.0.15",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:28.540Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-content/themes/flex-mag/css/reset.css?ver=7.0.4",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:28.927Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-content/themes/flex-mag/style.css?ver=7.0.4",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:29.261Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-content/themes/flex-mag/css/media-queries.css?ver=7.0.4",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:29.502Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:30.003Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/wp/v2/pages/7",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:30.488Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/xmlrpc.php?rsd",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:30.920Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/",
+      "title": "Working Woman Report -",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/",
+      "discoveredAt": "2026-09-01T04:18:31.738Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/category/the-show/feed/",
+      "title": "THE SHOW &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:32.369Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/wp/v2/categories/13",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:32.919Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/category/business/",
+      "title": "Business &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:33.458Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/category/business/your-money/",
+      "title": "Your Money &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:33.937Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/category/entertainment/",
+      "title": "ENTERTAINMENT &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:34.314Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/author/ahunss/feed/",
+      "title": "Working Woman Report &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:34.756Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/wp/v2/users/2",
+      "error": "Failed https://workingwomanreport.com/wp-json/wp/v2/users/2: 404"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/president-bidens-maui-visit-a-missed-opportunity-for-genuine-connection/",
+      "title": "President Biden&#8217;s Maui Visit: A Missed Opportunity for Genuine Connection &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/president-bidens-maui-visit-a-missed-opportunity-for-genuine-connection/",
+      "discoveredAt": "2026-09-01T04:18:36.732Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/president-bidens-maui-visit-a-missed-opportunity-for-genuine-connection/#comments",
+      "title": "President Biden&#8217;s Maui Visit: A Missed Opportunity for Genuine Connection &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/president-bidens-maui-visit-a-missed-opportunity-for-genuine-connection/",
+      "discoveredAt": "2026-09-01T04:18:36.969Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/president-bidens-maui-visit-a-missed-opportunity-for-genuine-connection/feed/atom/",
+      "title": "Comments on President Biden&#8217;s Maui Visit: A Missed Opportunity for Genuine Connection",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:37.304Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/ambassadors-of-freedom-help-sound-of-freedom-top-the-box-office/",
+      "title": "Ambassadors of Freedom Help &#8220;Sound of Freedom&#8221; Top the Box Office &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/ambassadors-of-freedom-help-sound-of-freedom-top-the-box-office/",
+      "discoveredAt": "2026-09-01T04:18:38.227Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/ambassadors-of-freedom-help-sound-of-freedom-top-the-box-office/#comments",
+      "title": "Ambassadors of Freedom Help &#8220;Sound of Freedom&#8221; Top the Box Office &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/ambassadors-of-freedom-help-sound-of-freedom-top-the-box-office/",
+      "discoveredAt": "2026-09-01T04:18:38.411Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/ambassadors-of-freedom-help-sound-of-freedom-top-the-box-office/feed/atom/",
+      "title": "Comments on Ambassadors of Freedom Help &#8220;Sound of Freedom&#8221; Top the Box Office",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:38.684Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/kindra-shines-light-on-menopause-misdiagnosis-crisis/",
+      "title": "Empowering Menopause Care: Kindra Takes the Lead in Bridging the Gap &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/kindra-shines-light-on-menopause-misdiagnosis-crisis/",
+      "discoveredAt": "2026-09-01T04:18:39.684Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/kindra-shines-light-on-menopause-misdiagnosis-crisis/#comments",
+      "title": "Empowering Menopause Care: Kindra Takes the Lead in Bridging the Gap &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/kindra-shines-light-on-menopause-misdiagnosis-crisis/",
+      "discoveredAt": "2026-09-01T04:18:39.804Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/kindra-shines-light-on-menopause-misdiagnosis-crisis/feed/atom/",
+      "title": "Comments on Empowering Menopause Care: Kindra Takes the Lead in Bridging the Gap",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:40.135Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/on-purpose-woman-the-complete-holistic-guide-for-spiritual-entrepreneurs/",
+      "title": "On Purpose Woman: The Complete Holistic Guide for Spiritual Entrepreneurs. &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/on-purpose-woman-the-complete-holistic-guide-for-spiritual-entrepreneurs/",
+      "discoveredAt": "2026-09-01T04:18:41.318Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/on-purpose-woman-the-complete-holistic-guide-for-spiritual-entrepreneurs/#comments",
+      "title": "On Purpose Woman: The Complete Holistic Guide for Spiritual Entrepreneurs. &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/on-purpose-woman-the-complete-holistic-guide-for-spiritual-entrepreneurs/",
+      "discoveredAt": "2026-09-01T04:18:41.478Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/on-purpose-woman-the-complete-holistic-guide-for-spiritual-entrepreneurs/feed/atom/",
+      "title": "Comments on On Purpose Woman: The Complete Holistic Guide for Spiritual Entrepreneurs.",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:41.928Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/these-women-are-shattering-the-glass-ceiling-in-the-wine-industry/",
+      "title": "These Women Are Shattering The Glass Ceiling In The Wine Industry &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/these-women-are-shattering-the-glass-ceiling-in-the-wine-industry/",
+      "discoveredAt": "2026-09-01T04:18:43.306Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/these-women-are-shattering-the-glass-ceiling-in-the-wine-industry/#comments",
+      "title": "These Women Are Shattering The Glass Ceiling In The Wine Industry &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/these-women-are-shattering-the-glass-ceiling-in-the-wine-industry/",
+      "discoveredAt": "2026-09-01T04:18:43.901Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/these-women-are-shattering-the-glass-ceiling-in-the-wine-industry/feed/atom/",
+      "title": "Comments on These Women Are Shattering The Glass Ceiling In The Wine Industry",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:45.095Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/windows-for-women-celebrates-womens-history-month-with-artwork-from-32-women/",
+      "title": "&#8220;Windows for Women&#8221; Celebrates Women’s History Month With Artwork From 32 Women &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/windows-for-women-celebrates-womens-history-month-with-artwork-from-32-women/",
+      "discoveredAt": "2026-09-01T04:18:47.501Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/windows-for-women-celebrates-womens-history-month-with-artwork-from-32-women/#comments",
+      "title": "&#8220;Windows for Women&#8221; Celebrates Women’s History Month With Artwork From 32 Women &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/windows-for-women-celebrates-womens-history-month-with-artwork-from-32-women/",
+      "discoveredAt": "2026-09-01T04:18:48.367Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/windows-for-women-celebrates-womens-history-month-with-artwork-from-32-women/feed/atom/",
+      "title": "Comments on &#8220;Windows for Women&#8221; Celebrates Women’s History Month With Artwork From 32 Women",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:49.138Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/category/business/feed/",
+      "title": "Business &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:49.889Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/wp/v2/categories/9",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:50.737Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/category/business/your-money/feed/",
+      "title": "Your Money &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:52.358Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/wp/v2/categories/8961",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:54.730Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/category/entertainment/feed/",
+      "title": "ENTERTAINMENT &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:55.020Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/wp/v2/categories/11",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:55.332Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/president-bidens-maui-visit-a-missed-opportunity-for-genuine-connection/feed/",
+      "title": "Comments on: President Biden&#8217;s Maui Visit: A Missed Opportunity for Genuine Connection",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:55.655Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingwomanreport.com%2Fpresident-bidens-maui-visit-a-missed-opportunity-for-genuine-connection%2F",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:55.954Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingwomanreport.com%2Fpresident-bidens-maui-visit-a-missed-opportunity-for-genuine-connection%2F&#038;format=xml",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:56.128Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/wp/v2/posts/37410",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:56.579Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/?p=37410",
+      "title": "President Biden&#8217;s Maui Visit: A Missed Opportunity for Genuine Connection &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/president-bidens-maui-visit-a-missed-opportunity-for-genuine-connection/",
+      "discoveredAt": "2026-09-01T04:18:57.311Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/president-bidens-maui-visit-a-missed-opportunity-for-genuine-connection/#respond",
+      "title": "President Biden&#8217;s Maui Visit: A Missed Opportunity for Genuine Connection &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/president-bidens-maui-visit-a-missed-opportunity-for-genuine-connection/",
+      "discoveredAt": "2026-09-01T04:18:57.506Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/ambassadors-of-freedom-help-sound-of-freedom-top-the-box-office/feed/",
+      "title": "Comments on: Ambassadors of Freedom Help &#8220;Sound of Freedom&#8221; Top the Box Office",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:57.925Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingwomanreport.com%2Fambassadors-of-freedom-help-sound-of-freedom-top-the-box-office%2F",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:58.222Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingwomanreport.com%2Fambassadors-of-freedom-help-sound-of-freedom-top-the-box-office%2F&#038;format=xml",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:58.431Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/wp/v2/posts/37405",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:18:58.870Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/?p=37405",
+      "title": "Ambassadors of Freedom Help &#8220;Sound of Freedom&#8221; Top the Box Office &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/ambassadors-of-freedom-help-sound-of-freedom-top-the-box-office/",
+      "discoveredAt": "2026-09-01T04:18:59.638Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/ambassadors-of-freedom-help-sound-of-freedom-top-the-box-office/#respond",
+      "title": "Ambassadors of Freedom Help &#8220;Sound of Freedom&#8221; Top the Box Office &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/ambassadors-of-freedom-help-sound-of-freedom-top-the-box-office/",
+      "discoveredAt": "2026-09-01T04:18:59.795Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/kindra-shines-light-on-menopause-misdiagnosis-crisis/feed/",
+      "title": "Comments on: Empowering Menopause Care: Kindra Takes the Lead in Bridging the Gap",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:19:00.178Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingwomanreport.com%2Fkindra-shines-light-on-menopause-misdiagnosis-crisis%2F",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:19:00.673Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingwomanreport.com%2Fkindra-shines-light-on-menopause-misdiagnosis-crisis%2F&#038;format=xml",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:19:00.972Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/wp/v2/posts/37403",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:19:01.517Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/?p=37403",
+      "title": "Empowering Menopause Care: Kindra Takes the Lead in Bridging the Gap &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/kindra-shines-light-on-menopause-misdiagnosis-crisis/",
+      "discoveredAt": "2026-09-01T04:19:01.934Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/kindra-shines-light-on-menopause-misdiagnosis-crisis/#respond",
+      "title": "Empowering Menopause Care: Kindra Takes the Lead in Bridging the Gap &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/kindra-shines-light-on-menopause-misdiagnosis-crisis/",
+      "discoveredAt": "2026-09-01T04:19:02.098Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/on-purpose-woman-the-complete-holistic-guide-for-spiritual-entrepreneurs/feed/",
+      "title": "Comments on: On Purpose Woman: The Complete Holistic Guide for Spiritual Entrepreneurs.",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:19:02.488Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingwomanreport.com%2Fon-purpose-woman-the-complete-holistic-guide-for-spiritual-entrepreneurs%2F",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:19:02.921Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fworkingwomanreport.com%2Fon-purpose-woman-the-complete-holistic-guide-for-spiritual-entrepreneurs%2F&#038;format=xml",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:19:03.354Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/wp-json/wp/v2/posts/37401",
+      "title": "",
+      "description": "",
+      "canonicalUrl": "",
+      "discoveredAt": "2026-09-01T04:19:03.706Z"
+    },
+    {
+      "originalUrl": "https://workingwomanreport.com/?p=37401",
+      "title": "On Purpose Woman: The Complete Holistic Guide for Spiritual Entrepreneurs. &#8211; Working Woman Report",
+      "description": "",
+      "canonicalUrl": "https://workingwomanreport.com/on-purpose-woman-the-complete-holistic-guide-for-spiritual-entrepreneurs/",
+      "discoveredAt": "2026-09-01T04:19:04.243Z"
+    }
+  ]
+}

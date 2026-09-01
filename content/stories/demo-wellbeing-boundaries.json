@@ -1,0 +1,24 @@
+{
+  "id": "story-demo-003",
+  "slug": "demo-wellbeing-boundaries",
+  "title": "When Work Expands, Boundaries Need A System",
+  "dek": "A demo health and lifestyle story slot for service journalism and viewer follow-up.",
+  "category": "Life & Style",
+  "tags": ["health", "work", "lifestyle"],
+  "status": "published",
+  "publishDate": "2026-08-11",
+  "author": "Working Woman Report Editorial",
+  "heroImage": "/images/story-health.svg",
+  "heroImageAlt": "Stylized health and lifestyle placeholder for a demo story.",
+  "body": [
+    {
+      "heading": "Demo Lifestyle Coverage",
+      "body": "This is placeholder copy. Production stories should distinguish reported facts, expert guidance, and editorial commentary."
+    }
+  ],
+  "sources": [],
+  "relatedStories": ["demo-leadership-reset"],
+  "seoTitle": "Demo Boundaries And Wellbeing Story",
+  "seoDescription": "A demo Working Woman Report life and style story used for testing.",
+  "demoNotice": "Demo article. Replace before public editorial launch."
+}

@@ -1,10 +1,10 @@
 import {
-  Facebook,
-  Instagram,
+  Camera,
+  CirclePlay,
+  MessageCircle,
   Music2,
   Play,
   Send,
-  Youtube,
 } from "lucide-react";
 
 export const siteConfig = {
@@ -19,19 +19,19 @@ export const siteConfig = {
     youtube: {
       label: "YouTube",
       url: process.env.NEXT_PUBLIC_YOUTUBE_URL ?? "",
-      icon: Youtube,
+      icon: CirclePlay,
       configured: Boolean(process.env.NEXT_PUBLIC_YOUTUBE_URL),
     },
     instagram: {
       label: "Instagram",
       url: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "",
-      icon: Instagram,
+      icon: Camera,
       configured: Boolean(process.env.NEXT_PUBLIC_INSTAGRAM_URL),
     },
     facebook: {
       label: "Facebook",
       url: process.env.NEXT_PUBLIC_FACEBOOK_URL ?? "",
-      icon: Facebook,
+      icon: MessageCircle,
       configured: Boolean(process.env.NEXT_PUBLIC_FACEBOOK_URL),
     },
     tiktok: {

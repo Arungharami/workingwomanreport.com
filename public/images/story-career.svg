@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Career editorial placeholder">
+  <rect width="1200" height="900" fill="#171514"/>
+  <path d="M0 580h1200v320H0z" fill="#f7f5f0"/>
+  <path d="M140 160h250v420H140z" fill="#b3873c"/>
+  <path d="M465 220h595v360H465z" fill="#fffdfa"/>
+  <path d="M515 275h310v22H515zM515 335h460v22H515zM515 395h370v22H515z" fill="#171514"/>
+  <circle cx="265" cy="280" r="80" fill="#fffdfa"/>
+  <path d="M205 395h120l40 185H165z" fill="#0f6b68"/>
+</svg>

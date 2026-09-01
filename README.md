@@ -1,36 +1,118 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Working Woman Report
 
-## Getting Started
+Working Woman Report is a modern digital television and editorial newsroom for
+women-focused business, careers, money, lifestyle, health, technology,
+entertainment, and success coverage.
 
-First, run the development server:
+This rebuild centers the product around one authoritative weekly reporting
+package: Allison selects and reports one topic, the website becomes the
+canonical story, and the same package feeds TV/video, YouTube, short-form
+social, X, newsletter, analytics, and archive workflows.
+
+## Architecture
+
+- Next.js App Router, TypeScript strict mode, React, Tailwind CSS.
+- File-based content in `content/weekly`, `content/stories`, `content/social`,
+  and `content/people`.
+- Validated schemas in `src/lib/content/schema.ts`.
+- Provider-independent analytics, newsletter, and social adapter stubs in
+  `src/lib`.
+- SEO endpoints: metadata API, JSON-LD, sitemap, robots, and RSS.
+
+## Development
 
 ```bash
+npm install
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Local checks:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```bash
+npm run lint
+npm run typecheck
+npm run test
+npm run build
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## Publishing This Week's Story
 
-## Learn More
+1. Copy `content/weekly/demo-weekly-story.json` to a new slugged JSON file.
+2. Replace all demo text with verified reporting, image/video rights notes,
+   source notes, transcript, and SEO fields.
+3. Create `content/social/{slug}.json` for YouTube, Instagram, Facebook, TikTok,
+   X, newsletter, and website copy.
+4. Run `ENABLE_STUDIO=true npm run dev` and open `/studio`.
+5. Review Article, Video Metadata, Social Package, SEO, Accessibility, and the
+   Publishing Checklist.
+6. Do not publish until Allison approval is checked.
 
-To learn more about Next.js, take a look at the following resources:
+## Weekly Workflow
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Monday: topic selection and research.
+Tuesday: reporting, interviews, and material collection.
+Wednesday: article and TV/video preparation.
+Thursday: edit, Allison approval, SEO, and social package.
+Friday: publish flagship website/video package.
+Weekend: short-form clips, engagement, and analytics.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+Adjust the schedule to Allison's actual TV timing.
 
-## Deploy on Vercel
+## Social Workflow
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+Never create disconnected stories for each platform. Start from one canonical
+weekly story and adapt it into:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- one flagship article
+- one full YouTube video
+- two to four short vertical-video concepts
+- Instagram feed/Reel package
+- Facebook package
+- TikTok package
+- three to five X posts or a thread
+- newsletter package
+- SEO package
+
+The app includes safe adapter interfaces only. It does not automatically post to
+social networks without official API credentials.
+
+## Legacy Migration
+
+Inspect the old site without blindly republishing syndicated material:
+
+```bash
+npm run audit:legacy
+npm run migrate:legacy
+```
+
+The generated manifest tracks original URL, slug, migration status, ownership
+status, asset rights status, canonical URL, and redirect destination. Only move
+full text or media when Working Woman Report owns it or reuse authorization is
+confirmed.
+
+## Environment Variables
+
+See `.env.example`.
+
+Keep `ENABLE_STUDIO=false` in production unless Studio is deployed behind a
+protected editorial environment. Never commit API keys, OAuth tokens, Vercel
+tokens, newsletter secrets, or social publishing credentials.
+
+## Deployment
+
+The project is Vercel-ready. Configure `NEXT_PUBLIC_SITE_URL`, confirmed social
+profile URLs, analytics provider, newsletter provider, and any future social API
+credentials in the deployment environment.
+
+## Future CMS Integration
+
+Presentation components call content helpers rather than reading files directly
+from page components. A CMS migration can replace the implementations in
+`src/lib/content` while preserving route and component contracts.
+
+## Editorial And AI Policy
+
+AI can assist drafting and preparation. It is not the journalist. Do not
+fabricate quotes, statistics, sources, interviews, events, credentials, or image
+rights. Important factual claims must be reviewable against source material.
+Allison has final editorial approval.

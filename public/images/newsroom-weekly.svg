@@ -1,0 +1,11 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Editorial newsroom set placeholder">
+  <rect width="1600" height="1000" fill="#171514"/>
+  <path d="M0 765h1600v235H0z" fill="#f7f5f0"/>
+  <path d="M100 145h650v365H100z" fill="#fffdfa"/>
+  <path d="M850 145h650v365H850z" fill="#0f6b68"/>
+  <path d="M118 168h614v36H118zM118 236h420v18H118zM118 278h530v18H118zM118 320h360v18H118z" fill="#171514"/>
+  <circle cx="1180" cy="328" r="126" fill="#f7f5f0" opacity=".92"/>
+  <path d="M1045 510h270l-38 255h-194z" fill="#9f1d35"/>
+  <path d="M250 610h710v52H250z" fill="#b3873c"/>
+  <path d="M250 695h1100v22H250zM250 755h760v22H250zM250 815h930v22H250z" fill="#5f5954"/>
+</svg>

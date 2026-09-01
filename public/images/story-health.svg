@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Health and lifestyle editorial placeholder">
+  <rect width="1200" height="900" fill="#f7f5f0"/>
+  <circle cx="660" cy="390" r="240" fill="#0f6b68"/>
+  <path d="M190 245h360v350H190z" fill="#fffdfa"/>
+  <path d="M245 315h250v22H245zM245 372h210v22H245zM245 430h270v22H245z" fill="#171514"/>
+  <path d="M650 275h55v230h-55zM562 362h230v55H562z" fill="#fffdfa"/>
+  <path d="M850 615h180v62H850z" fill="#9f1d35"/>
+</svg>

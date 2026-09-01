@@ -1,0 +1,24 @@
+{
+  "id": "story-demo-002",
+  "slug": "demo-leadership-reset",
+  "title": "The Leadership Reset: What Managers Should Clarify Before A New Quarter",
+  "dek": "A demo career story for the editorial grid, category pages, and related coverage modules.",
+  "category": "Career",
+  "tags": ["leadership", "management", "career"],
+  "status": "published",
+  "publishDate": "2026-08-18",
+  "author": "Working Woman Report Editorial",
+  "heroImage": "/images/story-career.svg",
+  "heroImageAlt": "Stylized meeting room placeholder for a demo career story.",
+  "body": [
+    {
+      "heading": "Demo Career Coverage",
+      "body": "This placeholder demonstrates reading typography, bylines, dates, and related story routing. Replace with verified reporting before launch."
+    }
+  ],
+  "sources": [],
+  "relatedStories": ["demo-capital-checklist"],
+  "seoTitle": "Demo Leadership Reset Story",
+  "seoDescription": "A demo Working Woman Report career story used for testing.",
+  "demoNotice": "Demo article. Replace before public editorial launch."
+}

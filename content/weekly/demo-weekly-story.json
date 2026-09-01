@@ -1,0 +1,59 @@
+{
+  "id": "weekly-demo-001",
+  "slug": "demo-main-street-growth",
+  "title": "How Women-Owned Main Street Businesses Are Planning Their Next Growth Move",
+  "shortTitle": "Main Street Growth",
+  "dek": "A demo weekly reporting package showing how one canonical story can become the website feature, TV segment, social clips, newsletter, and archive record.",
+  "summary": "This sample package demonstrates structure, hierarchy, accessibility fields, social distribution, and editorial approvals. It is not real reporting and must be replaced before launch.",
+  "category": "Business",
+  "tags": ["entrepreneurship", "small business", "leadership", "weekly report"],
+  "status": "published",
+  "publishDate": "2026-09-01",
+  "airDate": "2026-09-04",
+  "updatedDate": "2026-09-01",
+  "author": "Working Woman Report Editorial",
+  "reporter": "Allison Haunss",
+  "location": "Editorial demo",
+  "heroImage": "/images/newsroom-weekly.svg",
+  "heroImageAlt": "Stylized editorial newsroom set used as a placeholder for the weekly report image.",
+  "thumbnail": "/images/newsroom-weekly.svg",
+  "video": {
+    "title": "Demo weekly report video placeholder",
+    "duration": "00:00",
+    "captionUrl": ""
+  },
+  "sources": [
+    {
+      "title": "Source list placeholder",
+      "note": "Replace with verified reporting sources before publication."
+    }
+  ],
+  "keyTakeaways": [
+    "The weekly story is the canonical source for all platform versions.",
+    "Every claim should be tied to source material before publication.",
+    "Allison approval is a required final checklist state before publishing.",
+    "Social packages adapt the reporting for each platform instead of duplicating copy."
+  ],
+  "articleBody": [
+    {
+      "heading": "The Weekly Story Comes First",
+      "body": "This demo article is a working model for the newsroom workflow. In production, this section becomes the reported flagship story, written with source transparency, dates, names, and factual claims that can be reviewed before publication."
+    },
+    {
+      "heading": "From Reporting To Television",
+      "body": "The same package supports the television segment, the full YouTube presentation, short vertical clips, newsletter copy, and platform-specific social posts. Editors can prepare those versions in Studio while keeping the website as the permanent record."
+    },
+    {
+      "heading": "What Must Be Replaced",
+      "body": "Replace the demo headline, article text, placeholder artwork, source notes, video metadata, and social copy with verified reporting. Do not publish invented quotes, statistics, credentials, interviews, or image rights."
+    }
+  ],
+  "transcript": "Transcript placeholder. Add the checked transcript after video edit and caption review.",
+  "quotes": [],
+  "relatedStories": ["demo-capital-checklist", "demo-leadership-reset"],
+  "seoTitle": "Demo Weekly Story Package for Working Woman Report",
+  "seoDescription": "A clearly labeled demo weekly story package for the Working Woman Report newsroom rebuild.",
+  "canonicalUrl": "/this-week/demo-main-street-growth",
+  "newsletterCopy": "This is demo newsletter copy. Replace with Allison-approved summary, CTA, and links.",
+  "demoNotice": "This is demonstration content for layout and workflow validation, not published reporting."
+}

@@ -1,0 +1,24 @@
+{
+  "id": "story-demo-001",
+  "slug": "demo-capital-checklist",
+  "title": "A Founder Capital Checklist For The Next Funding Conversation",
+  "dek": "A demo business and money story that shows how evergreen explainers can support the weekly package.",
+  "category": "Money",
+  "tags": ["capital", "founders", "finance"],
+  "status": "published",
+  "publishDate": "2026-08-25",
+  "author": "Working Woman Report Editorial",
+  "heroImage": "/images/story-business.svg",
+  "heroImageAlt": "Stylized business desk placeholder for a demo money story.",
+  "body": [
+    {
+      "heading": "Demo Explainer",
+      "body": "This is placeholder copy for layout testing. Replace it with original reporting, verified source links, and editorial review notes."
+    }
+  ],
+  "sources": [],
+  "relatedStories": ["demo-main-street-growth"],
+  "seoTitle": "Demo Founder Capital Checklist",
+  "seoDescription": "A demo Working Woman Report money story used for testing the article system.",
+  "demoNotice": "Demo article. Replace before public editorial launch."
+}

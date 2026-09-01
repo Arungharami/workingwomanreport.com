@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="900" viewBox="0 0 1200 900" role="img" aria-label="Business editorial placeholder">
+  <rect width="1200" height="900" fill="#fffdfa"/>
+  <path d="M90 700h1020v80H90z" fill="#171514"/>
+  <path d="M160 150h300v450H160z" fill="#0f6b68"/>
+  <path d="M510 260h520v340H510z" fill="#ded7cc"/>
+  <path d="M560 310h350v24H560zM560 370h260v24H560zM560 430h420v24H560z" fill="#171514"/>
+  <circle cx="310" cy="285" r="84" fill="#f7f5f0"/>
+  <path d="M242 402h136l35 198H207z" fill="#9f1d35"/>
+</svg>

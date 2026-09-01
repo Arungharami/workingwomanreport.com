@@ -1,43 +1,35 @@
-import { Camera, CirclePlay, MessageCircle, Music2, Play, Send } from "lucide-react";
+import { Play } from "lucide-react";
+import { brandConfig } from "../../config/brand";
+import { socialConfig } from "../../config/social";
 
 export const siteConfig = {
-  name: "Working Woman Report",
-  shortName: "WWR",
-  url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://workingwomanreport.com",
-  description:
-    "A modern digital television and editorial newsroom covering women in business, money, careers, health, technology, entertainment, and success.",
-  founder: "Allison Haunss",
-  contactEmail: "editorial@workingwomanreport.com",
+  name: brandConfig.brandName,
+  shortName: brandConfig.shortName,
+  tagline: brandConfig.tagline,
+  url: brandConfig.siteUrl,
+  description: brandConfig.description,
+  founder: brandConfig.reporter.name,
+  reporter: brandConfig.reporter,
+  contactEmail: brandConfig.contactEmail,
   social: {
     youtube: {
-      label: "YouTube",
-      url: process.env.NEXT_PUBLIC_YOUTUBE_URL ?? "",
-      icon: CirclePlay,
-      configured: Boolean(process.env.NEXT_PUBLIC_YOUTUBE_URL),
+      ...socialConfig.youtube,
+      configured: Boolean(socialConfig.youtube.url),
     },
     instagram: {
-      label: "Instagram",
-      url: process.env.NEXT_PUBLIC_INSTAGRAM_URL ?? "",
-      icon: Camera,
-      configured: Boolean(process.env.NEXT_PUBLIC_INSTAGRAM_URL),
+      ...socialConfig.instagram,
+      configured: Boolean(socialConfig.instagram.url),
     },
     facebook: {
-      label: "Facebook",
-      url: process.env.NEXT_PUBLIC_FACEBOOK_URL ?? "",
-      icon: MessageCircle,
-      configured: Boolean(process.env.NEXT_PUBLIC_FACEBOOK_URL),
+      ...socialConfig.facebook,
+      configured: Boolean(socialConfig.facebook.url),
     },
     tiktok: {
-      label: "TikTok",
-      url: process.env.NEXT_PUBLIC_TIKTOK_URL ?? "",
-      icon: Music2,
-      configured: Boolean(process.env.NEXT_PUBLIC_TIKTOK_URL),
+      ...socialConfig.tiktok,
+      configured: Boolean(socialConfig.tiktok.url),
     },
     x: {
-      label: "X",
-      handle: "@WorkingWomanTV",
-      url: "https://x.com/WorkingWomanTV",
-      icon: Send,
+      ...socialConfig.x,
       configured: true,
     },
     watch: {

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { EditorialEmptyState } from "@/components/empty-state";
 import { StoryCard } from "@/components/story-card";
 import { SectionHeader } from "@/components/ui";
 import { VideoEmbed } from "@/components/video-embed";
@@ -12,7 +13,16 @@ export const metadata: Metadata = {
 
 export default function WatchPage() {
   const current = getCurrentWeeklyStory();
-  const weekly = getWeeklyStories();
+  const weekly = getWeeklyStories().filter((story) => !story.isDemo);
+
+  if (!current) {
+    return (
+      <EditorialEmptyState
+        title="The next Working Woman Report video package is coming soon."
+        dek="Full segments, YouTube metadata, shorts, transcript, and related video slots are ready for the first approved report."
+      />
+    );
+  }
 
   return (
     <div className="container-shell py-10">

@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import { EditorialEmptyState } from "@/components/empty-state";
 import { StoryCard } from "@/components/story-card";
 import { SectionHeader } from "@/components/ui";
 import { getPublishedStories } from "@/lib/content";
@@ -15,6 +16,15 @@ export default async function StoriesPage({ searchParams }: Props) {
   const stories = getPublishedStories().filter((story) =>
     category ? story.category === category : true,
   );
+
+  if (!stories.length) {
+    return (
+      <EditorialEmptyState
+        title="Approved stories are coming soon."
+        dek="The public article index will fill with verified Working Woman Report coverage after Allison-approved content is added."
+      />
+    );
+  }
 
   return (
     <div className="container-shell py-10">

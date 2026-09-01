@@ -6,6 +6,7 @@
   "category": "Career",
   "tags": ["leadership", "management", "career"],
   "status": "published",
+  "isDemo": true,
   "publishDate": "2026-08-18",
   "author": "Working Woman Report Editorial",
   "heroImage": "/images/story-career.svg",

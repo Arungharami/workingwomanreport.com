@@ -1,5 +1,6 @@
 import Image from "next/image";
 import Link from "next/link";
+import { EditorialEmptyState } from "@/components/empty-state";
 import { NewsletterSignup } from "@/components/newsletter-signup";
 import { StoryCard } from "@/components/story-card";
 import { ButtonLink, Eyebrow, SectionHeader } from "@/components/ui";
@@ -11,6 +12,24 @@ import { siteConfig } from "@/lib/site";
 export default function Home() {
   const weekly = getCurrentWeeklyStory();
   const stories = getPublishedStories();
+
+  if (!weekly) {
+    return (
+      <>
+        <EditorialEmptyState />
+        <section className="container-shell py-8">
+          <SectionHeader
+            eyebrow="Preparation"
+            title="One Topic. One Canonical Story. Every Channel."
+            dek="The production system is ready for the first approved weekly report, video package, newsletter summary, and social distribution kit."
+          />
+        </section>
+        <section className="container-shell py-10">
+          <NewsletterSignup />
+        </section>
+      </>
+    );
+  }
 
   return (
     <>

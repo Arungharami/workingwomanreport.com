@@ -37,14 +37,26 @@ export function getWeeklyStories(): WeeklyStory[] {
 }
 
 export function getPublishedWeeklyStories(): WeeklyStory[] {
-  return getWeeklyStories().filter((story) => story.status === "published");
+  return getWeeklyStories().filter((story) => story.status === "published" && !story.isDemo);
 }
 
-export function getCurrentWeeklyStory(): WeeklyStory {
-  return getPublishedWeeklyStories()[0] ?? getWeeklyStories()[0];
+export function getCurrentWeeklyStory(): WeeklyStory | undefined {
+  return getPublishedWeeklyStories()[0];
+}
+
+export function getStudioWeeklyStories(): WeeklyStory[] {
+  return getWeeklyStories();
+}
+
+export function getCurrentStudioWeeklyStory(): WeeklyStory | undefined {
+  return getWeeklyStories()[0];
 }
 
 export function getWeeklyStory(slug: string): WeeklyStory | undefined {
+  return getPublishedWeeklyStories().find((story) => story.slug === slug);
+}
+
+export function getStudioWeeklyStory(slug: string): WeeklyStory | undefined {
   return getWeeklyStories().find((story) => story.slug === slug);
 }
 
@@ -53,11 +65,15 @@ export function getStories(): Story[] {
 }
 
 export function getPublishedStories(): Story[] {
-  return getStories().filter((story) => story.status === "published");
+  return getStories().filter((story) => story.status === "published" && !story.isDemo);
 }
 
 export function getStory(slug: string): Story | undefined {
-  return getStories().find((story) => story.slug === slug);
+  return getPublishedStories().find((story) => story.slug === slug);
+}
+
+export function getStudioStories(): Story[] {
+  return getStories();
 }
 
 export function getSocialPackages(): SocialPackage[] {

@@ -8,6 +8,7 @@
   "category": "Business",
   "tags": ["entrepreneurship", "small business", "leadership", "weekly report"],
   "status": "published",
+  "isDemo": true,
   "publishDate": "2026-09-01",
   "airDate": "2026-09-04",
   "updatedDate": "2026-09-01",
@@ -20,11 +21,26 @@
   "video": {
     "title": "Demo weekly report video placeholder",
     "duration": "00:00",
-    "captionUrl": ""
+    "captionUrl": "",
+    "chapters": ["00:00 Intro", "00:30 Reporting context", "02:00 Key takeaways"],
+    "relatedVideos": [],
+    "shortClips": [
+      {
+        "title": "Demo clip concept: the weekly question",
+        "hook": "What question should one weekly report answer first?",
+        "status": "planned"
+      },
+      {
+        "title": "Demo clip concept: approval before publishing",
+        "hook": "Why Allison approval is the last gate before release.",
+        "status": "planned"
+      }
+    ]
   },
   "sources": [
     {
       "title": "Source list placeholder",
+      "type": "other",
       "note": "Replace with verified reporting sources before publication."
     }
   ],

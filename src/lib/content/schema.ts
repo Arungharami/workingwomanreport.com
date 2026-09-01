@@ -3,6 +3,7 @@ import { z } from "zod";
 export const contentStatusSchema = z.enum([
   "idea",
   "research",
+  "reporting",
   "draft",
   "review",
   "approved",
@@ -15,6 +16,10 @@ export const sourceSchema = z.object({
   title: z.string(),
   url: z.string().url().optional(),
   publisher: z.string().optional(),
+  date: z.string().optional(),
+  type: z
+    .enum(["official", "interview", "report", "research", "news", "dataset", "other"])
+    .default("other"),
   note: z.string().optional(),
 });
 
@@ -33,6 +38,7 @@ export const weeklyStorySchema = z.object({
   category: z.string(),
   tags: z.array(z.string()).default([]),
   status: contentStatusSchema,
+  isDemo: z.boolean().default(false),
   publishDate: z.string(),
   airDate: z.string().optional(),
   updatedDate: z.string().optional(),
@@ -48,6 +54,25 @@ export const weeklyStorySchema = z.object({
       duration: z.string().optional(),
       captionUrl: z.string().optional(),
       embedUrl: z.string().url().optional(),
+      chapters: z.array(z.string()).default([]),
+      relatedVideos: z
+        .array(
+          z.object({
+            title: z.string(),
+            url: z.string().url(),
+            platform: z.string().default("YouTube"),
+          }),
+        )
+        .default([]),
+      shortClips: z
+        .array(
+          z.object({
+            title: z.string(),
+            hook: z.string(),
+            status: z.string().default("planned"),
+          }),
+        )
+        .default([]),
     })
     .optional(),
   youtubeVideoId: z.string().optional(),
@@ -78,6 +103,7 @@ export const storySchema = z.object({
   category: z.string(),
   tags: z.array(z.string()).default([]),
   status: contentStatusSchema,
+  isDemo: z.boolean().default(false),
   publishDate: z.string(),
   updatedDate: z.string().optional(),
   author: z.string(),

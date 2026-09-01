@@ -6,6 +6,7 @@
   "category": "Life & Style",
   "tags": ["health", "work", "lifestyle"],
   "status": "published",
+  "isDemo": true,
   "publishDate": "2026-08-11",
   "author": "Working Woman Report Editorial",
   "heroImage": "/images/story-health.svg",

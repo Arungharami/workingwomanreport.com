@@ -6,6 +6,7 @@
   "category": "Money",
   "tags": ["capital", "founders", "finance"],
   "status": "published",
+  "isDemo": true,
   "publishDate": "2026-08-25",
   "author": "Working Woman Report Editorial",
   "heroImage": "/images/story-business.svg",

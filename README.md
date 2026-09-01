@@ -14,6 +14,8 @@ social, X, newsletter, analytics, and archive workflows.
 - Next.js App Router, TypeScript strict mode, React, Tailwind CSS.
 - File-based content in `content/weekly`, `content/stories`, `content/social`,
   and `content/people`.
+- Demo content is marked with `isDemo: true` and excluded from public queries,
+  feeds, and sitemaps.
 - Validated schemas in `src/lib/content/schema.ts`.
 - Provider-independent analytics, newsletter, and social adapter stubs in
   `src/lib`.
@@ -37,7 +39,7 @@ npm run build
 
 ## Publishing This Week's Story
 
-1. Copy `content/weekly/demo-weekly-story.json` to a new slugged JSON file.
+1. Run `npm run story:new -- "Topic Name"` to create blank draft files.
 2. Replace all demo text with verified reporting, image/video rights notes,
    source notes, transcript, and SEO fields.
 3. Create `content/social/{slug}.json` for YouTube, Instagram, Facebook, TikTok,

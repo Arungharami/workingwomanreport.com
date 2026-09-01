@@ -10,6 +10,9 @@ type AuditRecord = {
   canonicalUrl?: string;
 };
 
+type MigrationClassification =
+  "OWNED" | "AUTHORIZED" | "METADATA_ONLY" | "REVIEW_REQUIRED" | "SKIP";
+
 function slugFromUrl(url: string) {
   const pathname = new URL(url).pathname.replace(/^\/|\/$/g, "");
   return pathname.split("/").filter(Boolean).at(-1) ?? "legacy-home";
@@ -28,6 +31,7 @@ function main() {
     originalUrl: record.originalUrl,
     title: record.title ?? "",
     slug: slugFromUrl(record.originalUrl),
+    migrationClassification: "METADATA_ONLY" satisfies MigrationClassification,
     migrationStatus: "metadata-only",
     contentOwnershipStatus: "unverified",
     assetRightsStatus: "unverified",

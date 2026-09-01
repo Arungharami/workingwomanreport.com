@@ -25,6 +25,19 @@ export function articleJsonLd(story: Story | WeeklyStory, path: string) {
   };
 }
 
+export function breadcrumbJsonLd(items: { name: string; path: string }[]) {
+  return {
+    "@context": "https://schema.org",
+    "@type": "BreadcrumbList",
+    itemListElement: items.map((item, index) => ({
+      "@type": "ListItem",
+      position: index + 1,
+      name: item.name,
+      item: absoluteUrl(item.path, siteConfig.url),
+    })),
+  };
+}
+
 export function videoJsonLd(story: WeeklyStory) {
   if (!story.youtubeVideoId && !story.video?.embedUrl) {
     return null;

@@ -8,7 +8,7 @@ import { ShareTools } from "@/components/share-tools";
 import { SectionHeader } from "@/components/ui";
 import { getPublishedStories, getStory } from "@/lib/content";
 import { formatDate } from "@/lib/format";
-import { articleJsonLd } from "@/lib/seo";
+import { articleJsonLd, breadcrumbJsonLd } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -48,6 +48,13 @@ export default async function StoryPage({ params }: Props) {
   return (
     <article className="container-shell py-10">
       <JsonLd data={articleJsonLd(story, `/stories/${story.slug}`)} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "Stories", path: "/stories" },
+          { name: story.title, path: `/stories/${story.slug}` },
+        ])}
+      />
       <nav className="text-sm text-[var(--ink-muted)]" aria-label="Breadcrumb">
         <Link href="/">Home</Link> / <Link href="/stories">Stories</Link>
       </nav>

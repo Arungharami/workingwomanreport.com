@@ -8,6 +8,15 @@
    Publishing Checklist.
 6. Confirm Allison approval before publishing the website, video, or social copy.
 
+Start a blank week with:
+
+```bash
+npm run story:new -- "Women in AI Leadership"
+```
+
+This creates draft JSON files and media folders. It does not draft article text
+or invent sources.
+
 ## Weekly Operating Model
 
 Monday: topic selection and research.

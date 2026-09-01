@@ -33,5 +33,16 @@
   "placeholders": [
     "Add confirmed biography details, awards, employer history, and TV station/program timing only after verification.",
     "Add approved headshot and image rights documentation."
-  ]
+  ],
+  "historicalBio": {
+    "source": "https://workingwomanreport.com/about-working-woman-report-host-allison-haunss/",
+    "sourceDate": "2014-01-17",
+    "paragraphs": [
+      "Allison Haunss is an Emmy award winning journalist who has reported on some of the biggest stories in the New York area including the mid-air plane/tourist helicopter collision over the Hudson River, the attempted car bombing in Times Square, and the Pope's 2008 visit to NYC.",
+      "Allison joined WPIX in November 2007 as a freelance reporter. Prior to filing stories for WPIX, Allison was one of the main weeknight anchors at News 12 Connecticut, where she anchored the Monday through Friday news at 5:30 and 10pm. While at News 12 Connecticut, Allison traveled to Israel for an in-depth Emmy award winning series entitled \"Grandma Guard,\" examining one Stamford, CT woman's journey through the Israeli civil guard. Before News 12 Connecticut, Allison worked as a reporter in Westchester and on Long Island, and in television markets including Pittsburgh and Sioux Falls.",
+      "Allison graduated from Duke University and earned a master's degree in broadcast journalism from Northwestern University's Medill School of Journalism.",
+      "As of this 2014 record, she resided in New York City."
+    ],
+    "caveat": "This is the show's own 2014 host biography, reproduced as a historical record. Employer, residence, and award details reflect 2014 and have not been reconfirmed as current — see Placeholders To Verify."
+  }
 }

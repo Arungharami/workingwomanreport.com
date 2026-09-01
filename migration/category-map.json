@@ -1,0 +1,224 @@
+{
+  "generatedAt": "2026-09-01",
+  "source": "https://workingwomanreport.com/wp-json/wp/v2/categories?per_page=100 (28 categories, fetched live)",
+  "note": "postCount is the legacy WordPress category count at audit time. Modern taxonomy intentionally collapses overlapping legacy categories rather than mirroring all 28 — several legacy categories (Basketball, Football, Fashion, Economy, Politics, Personal Finance, Markets, Music, Tech, Wikipedia, Featured) have 0 posts and appear to be unused plugin/theme scaffolding, not real sections.",
+  "mappings": [
+    {
+      "legacyId": 9,
+      "legacySlug": "business",
+      "legacyName": "Business",
+      "legacyPostCount": 4651,
+      "modernCategory": "Business"
+    },
+    {
+      "legacyId": 8961,
+      "legacySlug": "your-money",
+      "legacyName": "Your Money",
+      "legacyPostCount": 124,
+      "modernCategory": "Money",
+      "parentLegacyId": 9
+    },
+    {
+      "legacyId": 97,
+      "legacySlug": "financial",
+      "legacyName": "FINANCIAL",
+      "legacyPostCount": 959,
+      "modernCategory": "Money"
+    },
+    {
+      "legacyId": 1,
+      "legacySlug": "up-to-the-minute",
+      "legacyName": "NEWS",
+      "legacyPostCount": 2177,
+      "modernCategory": "News"
+    },
+    {
+      "legacyId": 12,
+      "legacySlug": "life-style",
+      "legacyName": "LIFE & STYLE",
+      "legacyPostCount": 2109,
+      "modernCategory": "Life & Style"
+    },
+    {
+      "legacyId": 67,
+      "legacySlug": "technology",
+      "legacyName": "TECHNOLOGY",
+      "legacyPostCount": 784,
+      "modernCategory": "Technology"
+    },
+    {
+      "legacyId": 14,
+      "legacySlug": "health",
+      "legacyName": "HEALTH",
+      "legacyPostCount": 678,
+      "modernCategory": "Health"
+    },
+    {
+      "legacyId": 11,
+      "legacySlug": "entertainment",
+      "legacyName": "ENTERTAINMENT",
+      "legacyPostCount": 301,
+      "modernCategory": "Entertainment"
+    },
+    {
+      "legacyId": 853,
+      "legacySlug": "movies",
+      "legacyName": "Movies",
+      "legacyPostCount": 21,
+      "modernCategory": "Entertainment",
+      "parentLegacyId": 11
+    },
+    {
+      "legacyId": 854,
+      "legacySlug": "tv",
+      "legacyName": "TV",
+      "legacyPostCount": 16,
+      "modernCategory": "Entertainment",
+      "parentLegacyId": 11
+    },
+    {
+      "legacyId": 8955,
+      "legacySlug": "music",
+      "legacyName": "Music",
+      "legacyPostCount": 0,
+      "modernCategory": "Entertainment",
+      "parentLegacyId": 11
+    },
+    {
+      "legacyId": 57,
+      "legacySlug": "marketing-and-branding",
+      "legacyName": "MARKETING",
+      "legacyPostCount": 227,
+      "modernCategory": "Business"
+    },
+    {
+      "legacyId": 8957,
+      "legacySlug": "personal-finance",
+      "legacyName": "Personal Finance",
+      "legacyPostCount": 0,
+      "modernCategory": "Money",
+      "parentLegacyId": 9
+    },
+    {
+      "legacyId": 8954,
+      "legacySlug": "markets",
+      "legacyName": "Markets",
+      "legacyPostCount": 0,
+      "modernCategory": "Money",
+      "parentLegacyId": 9
+    },
+    {
+      "legacyId": 8952,
+      "legacySlug": "economy",
+      "legacyName": "Economy",
+      "legacyPostCount": 0,
+      "modernCategory": "Money"
+    },
+    {
+      "legacyId": 210,
+      "legacySlug": "videos",
+      "legacyName": "Videos",
+      "legacyPostCount": 73,
+      "modernCategory": "Watch (The Show)"
+    },
+    {
+      "legacyId": 2923,
+      "legacySlug": "success-stories",
+      "legacyName": "Success Stories",
+      "legacyPostCount": 38,
+      "modernCategory": "Success Stories",
+      "parentLegacyId": 210
+    },
+    {
+      "legacyId": 2922,
+      "legacySlug": "daily-news",
+      "legacyName": "Daily News",
+      "legacyPostCount": 36,
+      "modernCategory": "News",
+      "parentLegacyId": 210
+    },
+    {
+      "legacyId": 13,
+      "legacySlug": "the-show",
+      "legacyName": "THE SHOW",
+      "legacyPostCount": 3,
+      "modernCategory": "The Show"
+    },
+    {
+      "legacyId": 23382,
+      "legacySlug": "uncategorized",
+      "legacyName": "Uncategorized",
+      "legacyPostCount": 1,
+      "modernCategory": "Review required"
+    },
+    {
+      "legacyId": 8963,
+      "legacySlug": "basketball",
+      "legacyName": "Basketball",
+      "legacyPostCount": 0,
+      "modernCategory": "Unused — not migrated"
+    },
+    {
+      "legacyId": 8966,
+      "legacySlug": "football",
+      "legacyName": "Football",
+      "legacyPostCount": 0,
+      "modernCategory": "Unused — not migrated"
+    },
+    {
+      "legacyId": 8959,
+      "legacySlug": "sports",
+      "legacyName": "Sports",
+      "legacyPostCount": 0,
+      "modernCategory": "Unused — not migrated"
+    },
+    {
+      "legacyId": 8953,
+      "legacySlug": "fashion",
+      "legacyName": "Fashion",
+      "legacyPostCount": 0,
+      "modernCategory": "Unused — not migrated"
+    },
+    {
+      "legacyId": 8958,
+      "legacySlug": "politics",
+      "legacyName": "Politics",
+      "legacyPostCount": 0,
+      "modernCategory": "Unused — not migrated"
+    },
+    {
+      "legacyId": 23381,
+      "legacySlug": "tech",
+      "legacyName": "Tech",
+      "legacyPostCount": 0,
+      "modernCategory": "Unused — not migrated"
+    },
+    {
+      "legacyId": 23462,
+      "legacySlug": "featured",
+      "legacyName": "Featured",
+      "legacyPostCount": 0,
+      "modernCategory": "Unused — not migrated"
+    },
+    {
+      "legacyId": 23505,
+      "legacySlug": "wikipedia",
+      "legacyName": "Wikipedia",
+      "legacyPostCount": 0,
+      "modernCategory": "Unused — not migrated"
+    }
+  ],
+  "modernTaxonomy": [
+    "Business",
+    "Money",
+    "Career",
+    "Health",
+    "Life & Style",
+    "Technology",
+    "Entertainment",
+    "News",
+    "Success Stories",
+    "The Show"
+  ],
+  "notes": "The legacy site has no 'Career' category at all — every legacy post landed in Business/Financial/Life & Style instead. Career is a new modern section with no direct legacy predecessor; nothing needs to be remapped into it, but it also means there is no legacy archive content to seed it with."
+}

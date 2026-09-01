@@ -1,0 +1,48 @@
+{
+  "generatedAt": "2026-09-01T17:41:39.516Z",
+  "totalReportedByApi": 11837,
+  "totalFetched": 11837,
+  "totalCategories": 28,
+  "byClassification": {
+    "REVIEW_REQUIRED": 2476,
+    "SYNDICATED": 6804,
+    "SPAM": 2488,
+    "DUPLICATE": 9,
+    "WWR_SHOW": 2,
+    "WWR_VIDEO": 57,
+    "WWR_PROFILE": 1
+  },
+  "byOwnership": {
+    "REVIEW_REQUIRED": 2533,
+    "METADATA_ONLY": 6804,
+    "SKIP": 2497,
+    "OWNED": 3
+  },
+  "byCategory": {
+    "NEWS": 2176,
+    "ENTERTAINMENT": 301,
+    "HEALTH": 678,
+    "LIFE &amp; STYLE": 2109,
+    "Business": 4651,
+    "Uncategorized": 1,
+    "FINANCIAL": 834,
+    "TECHNOLOGY": 783,
+    "MARKETING": 227,
+    "THE SHOW": 3,
+    "Daily News": 36,
+    "Success Stories": 38
+  },
+  "byYear": {
+    "2013": 72,
+    "2014": 1807,
+    "2015": 1835,
+    "2016": 1818,
+    "2017": 1717,
+    "2018": 1460,
+    "2019": 1330,
+    "2020": 1021,
+    "2021": 671,
+    "2022": 87,
+    "2023": 19
+  }
+}

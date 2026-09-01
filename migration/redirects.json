@@ -1,0 +1,55 @@
+{
+  "generatedAt": "2026-09-01",
+  "strategy": "Two-tier. (1) A small, hand-verified list of permanent redirects — wired into next.config.ts `redirects()` — for the handful of legacy URLs whose destination on the new site is unambiguous. (2) Everything else that matches a legacy WordPress post slug falls through to the `[legacySlug]` catch-all route (src/app/[legacySlug]/page.tsx), which looks the slug up in migration/full-legacy-manifest.json and renders a metadata-only 'legacy archive record' notice — title, date, category, classification-appropriate note — rather than either a bare 404 or a blanket redirect to the homepage. Records classified SPAM render a real 404 (not indexed, not shown) rather than any page at all.",
+  "wiredRedirects": [
+    {
+      "from": "/about-the-show",
+      "to": "/show",
+      "reason": "OWNED — Working Woman Report's own 2013 show-description page; content migrated to the new /show hub."
+    },
+    {
+      "from": "/about-working-woman-report-host-allison-haunss",
+      "to": "/people/allison-haunss",
+      "reason": "OWNED — Working Woman Report's own 2014 host bio page; historical text migrated into the profile's Historical Biography section."
+    },
+    {
+      "from": "/working-woman-report-now-on-rnn-tv",
+      "to": "/show/archive",
+      "reason": "OWNED — 2015 post about the show's RNN-TV broadcast slot; historical record preserved on the show archive."
+    },
+    {
+      "from": "/category/the-show",
+      "to": "/show",
+      "reason": "Legacy category listing → modern show hub."
+    },
+    {
+      "from": "/category/business",
+      "to": "/stories?category=Business",
+      "reason": "Legacy category listing → modern category filter."
+    },
+    {
+      "from": "/category/business/your-money",
+      "to": "/stories?category=Money",
+      "reason": "Legacy subcategory → modern Money category."
+    },
+    {
+      "from": "/category/entertainment",
+      "to": "/stories?category=Entertainment",
+      "reason": "Legacy category listing → modern category filter."
+    },
+    {
+      "from": "/author/ahunss",
+      "to": "/people/allison-haunss",
+      "reason": "Legacy author archive → Allison's modern profile."
+    }
+  ],
+  "catchAllFallback": {
+    "route": "src/app/[legacySlug]/page.tsx",
+    "dataSource": "migration/full-legacy-manifest.json (11,837 records)",
+    "behavior": {
+      "SPAM": "notFound() — served as a real 404, not indexed. ~2,488 records.",
+      "everythingElse": "Metadata-only 'legacy archive record' page: title, original publish date, category, migration classification, and — for SYNDICATED records — source publisher attribution. No article body is reproduced. Page is marked noindex except for the 3 OWNED historical records, which redirect via the wired list above instead of hitting this route."
+    }
+  },
+  "explicitlyNotDone": "This does not redirect all ~11,837 legacy URLs individually, and does not redirect unmatched URLs to the homepage. Per the migration brief, blanket-redirecting an entire spam-and-syndication-heavy archive to the homepage would be poor SEO practice and would misrepresent unreviewed content as current reporting."
+}

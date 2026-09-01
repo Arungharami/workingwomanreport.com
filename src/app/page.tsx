@@ -7,11 +7,15 @@ import { ButtonLink, Eyebrow, SectionHeader } from "@/components/ui";
 import { VideoEmbed } from "@/components/video-embed";
 import { getCurrentWeeklyStory, getPublishedStories } from "@/lib/content";
 import { formatDate } from "@/lib/format";
+import { getArchiveYears, getOwnedHistoricalRecords, queryArchive } from "@/lib/legacy";
 import { siteConfig } from "@/lib/site";
 
 export default function Home() {
   const weekly = getCurrentWeeklyStory();
   const stories = getPublishedStories();
+  const showRecord = getOwnedHistoricalRecords().find((r) => r.slug === "about-the-show");
+  const archiveYears = getArchiveYears();
+  const archiveSample = queryArchive({ pageSize: 4 }).records;
 
   if (!weekly) {
     return (
@@ -24,6 +28,20 @@ export default function Home() {
             dek="The production system is ready for the first approved weekly report, video package, newsletter summary, and social distribution kit."
           />
         </section>
+        {showRecord ? (
+          <section className="container-shell border-t border-[var(--line)] py-10">
+            <SectionHeader eyebrow="The Show" title="Working Woman Report, on Television" />
+            <p className="max-w-2xl text-sm leading-7 text-[var(--ink-muted)]">
+              A half-hour lifestyle show exploring female-inspired businesses and
+              entrepreneurship, hosted by Allison Haunss.
+            </p>
+            <div className="mt-5">
+              <ButtonLink href="/show" variant="secondary">
+                About the show
+              </ButtonLink>
+            </div>
+          </section>
+        ) : null}
         <section className="container-shell py-10">
           <NewsletterSignup />
         </section>
@@ -156,6 +174,59 @@ export default function Home() {
         <SectionHeader eyebrow="Most Watched" title="Weekly Video Archive" />
         <StoryCard story={weekly} href={`/this-week/${weekly.slug}`} />
       </section>
+
+      {showRecord ? (
+        <section className="border-y border-[var(--line)] bg-[var(--paper)] py-12">
+          <div className="container-shell grid gap-8 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
+            <div>
+              <SectionHeader eyebrow="The Show" title="Working Woman Report, on Television" />
+              <p className="max-w-lg text-sm leading-7 text-[var(--ink-muted)]">
+                A half-hour lifestyle show exploring female-inspired businesses and
+                entrepreneurship, hosted by Allison Haunss — the on-air identity behind every
+                weekly report.
+              </p>
+              <div className="mt-5">
+                <ButtonLink href="/show" variant="secondary">
+                  About the show
+                </ButtonLink>
+              </div>
+            </div>
+            <div className="grid gap-3 sm:grid-cols-2">
+              <Link href="/show/success-stories" className="border border-[var(--line)] p-4">
+                <h3 className="font-serif text-xl">Success Stories</h3>
+                <p className="mt-2 text-xs text-[var(--ink-muted)]">Show archive segment</p>
+              </Link>
+              <Link href="/show/daily-news" className="border border-[var(--line)] p-4">
+                <h3 className="font-serif text-xl">Daily News</h3>
+                <p className="mt-2 text-xs text-[var(--ink-muted)]">Show archive segment</p>
+              </Link>
+            </div>
+          </div>
+        </section>
+      ) : null}
+
+      {archiveSample.length ? (
+        <section className="container-shell py-12">
+          <SectionHeader
+            eyebrow="From the Archive"
+            title="A Decade of Reporting"
+            dek={`Working Woman Report published from ${archiveYears[archiveYears.length - 1]} to ${archiveYears[0]}. Metadata only — full archive review is ongoing.`}
+          />
+          <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+            {archiveSample.map((record) => (
+              <li key={record.originalUrl} className="border border-[var(--line)] p-4">
+                <p className="text-xs text-[var(--ink-muted)]">
+                  {formatDate(record.publishedDate)}
+                </p>
+                <p className="mt-1 text-sm font-medium leading-snug">{record.title}</p>
+              </li>
+            ))}
+          </ul>
+          <Link href="/archive" className="mt-5 inline-block underline">
+            Browse the full archive
+          </Link>
+        </section>
+      ) : null}
 
       <section className="container-shell py-10">
         <NewsletterSignup />

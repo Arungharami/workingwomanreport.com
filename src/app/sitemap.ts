@@ -9,6 +9,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     "/this-week",
     "/watch",
     "/stories",
+    "/show",
     "/about",
     "/contact",
     "/search",

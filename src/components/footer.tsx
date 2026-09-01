@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { NewsletterSignup } from "@/components/newsletter-signup";
-import { navItems, siteConfig } from "@/lib/site";
+import { navItems, secondaryNavItems, siteConfig } from "@/lib/site";
 
 export function Footer() {
   const year = new Date().getFullYear();
@@ -10,7 +10,7 @@ export function Footer() {
 
   return (
     <footer className="mt-20 border-t border-[var(--line)] bg-[var(--paper)]">
-      <div className="container-shell grid gap-10 py-12 md:grid-cols-[1.4fr_1fr_1fr]">
+      <div className="container-shell grid gap-10 py-12 md:grid-cols-[1.2fr_0.85fr_0.85fr_1fr]">
         <div>
           <h2 className="font-serif text-3xl">{siteConfig.name}</h2>
           <p className="mt-4 max-w-md text-sm leading-6 text-[var(--ink-muted)]">
@@ -35,9 +35,19 @@ export function Footer() {
         </div>
         <div>
           <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">Navigate</h3>
-          <div className="mt-4 grid grid-cols-2 gap-2 text-sm">
+          <div className="mt-4 grid gap-2 text-sm">
             {navItems.slice(0, 12).map((item) => (
               <Link key={item.href + item.label} href={item.href} className="hover:underline">
+                {item.label}
+              </Link>
+            ))}
+          </div>
+        </div>
+        <div>
+          <h3 className="text-sm font-semibold uppercase tracking-[0.16em]">Explore</h3>
+          <div className="mt-4 grid gap-2 text-sm">
+            {secondaryNavItems.map((item) => (
+              <Link key={item.href} href={item.href} className="hover:underline">
                 {item.label}
               </Link>
             ))}

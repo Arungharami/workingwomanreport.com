@@ -1,0 +1,12 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="1000" viewBox="0 0 1600 1000" role="img" aria-label="Working Woman Report television show editorial placeholder">
+  <rect width="1600" height="1000" fill="#171514"/>
+  <path d="M120 160h1360v560H120z" fill="#3a332d"/>
+  <path d="M160 196h1280v488H160z" fill="#0f6b68"/>
+  <circle cx="800" cy="440" r="150" fill="#f7f5f0" opacity=".94"/>
+  <path d="M690 560h220l40 124H650z" fill="#9f1d35"/>
+  <path d="M160 196h1280v70H160z" fill="#171514" opacity=".55"/>
+  <circle cx="205" cy="231" r="12" fill="#9f1d35"/>
+  <path d="M235 222h120v18H235z" fill="#f7f5f0" opacity=".85"/>
+  <path d="M120 800h1360v46H120z" fill="#b3873c"/>
+  <path d="M120 872h760v28H120zM120 916h500v28H120z" fill="#f7f5f0" opacity=".9"/>
+</svg>

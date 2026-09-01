@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
-import { EditorialEmptyState } from "@/components/empty-state";
 import { StoryCard } from "@/components/story-card";
 import { SectionHeader } from "@/components/ui";
 import { VideoEmbed } from "@/components/video-embed";
@@ -20,15 +20,6 @@ export default function WatchPage() {
   const successStories = getSuccessStoryRecords();
   const dailyNews = getDailyNewsRecords();
 
-  if (!current) {
-    return (
-      <EditorialEmptyState
-        title="The next Working Woman Report video package is coming soon."
-        dek="Full segments, YouTube metadata, shorts, transcript, and related video slots are ready for the first approved report."
-      />
-    );
-  }
-
   return (
     <div className="container-shell py-10">
       <SectionHeader
@@ -36,21 +27,53 @@ export default function WatchPage() {
         title="Watch"
         dek="Full segments, weekly reports, shorts, success stories, and archived video packages."
       />
-      <section className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
-        <VideoEmbed youtubeVideoId={current.youtubeVideoId} title={current.title} />
-        <div>
-          <h1 className="font-serif text-4xl leading-tight">{current.title}</h1>
-          <p className="mt-4 text-sm leading-6 text-[var(--ink-muted)]">{current.summary}</p>
-        </div>
-      </section>
-      <section className="mt-12">
-        <SectionHeader title="Weekly Reports" />
-        <div className="grid gap-8 md:grid-cols-3">
-          {weekly.map((story) => (
-            <StoryCard key={story.slug} story={story} href={`/this-week/${story.slug}`} />
-          ))}
-        </div>
-      </section>
+
+      {current ? (
+        <section className="grid gap-8 lg:grid-cols-[1.2fr_0.8fr]">
+          <VideoEmbed youtubeVideoId={current.youtubeVideoId} title={current.title} />
+          <div>
+            <h1 className="font-serif text-4xl leading-tight">{current.title}</h1>
+            <p className="mt-4 text-sm leading-6 text-[var(--ink-muted)]">{current.summary}</p>
+          </div>
+        </section>
+      ) : (
+        <section className="grid gap-8 overflow-hidden border border-[var(--line)] lg:grid-cols-[1.1fr_0.9fr]">
+          <div className="relative aspect-[16/9]">
+            <Image
+              src="/images/watch-hero.svg"
+              alt="Working Woman Report video library illustration"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 55vw"
+              className="object-cover"
+            />
+          </div>
+          <div className="flex flex-col justify-center bg-[var(--paper)] p-8">
+            <p className="text-xs font-semibold uppercase tracking-[0.16em] text-[var(--accent)]">
+              Coming Soon
+            </p>
+            <h1 className="mt-3 font-serif text-3xl leading-tight">
+              The next Working Woman Report video package is coming soon.
+            </h1>
+            <p className="mt-4 text-sm leading-6 text-[var(--ink-muted)]">
+              Full segments, YouTube metadata, shorts, transcript, and related video slots are
+              ready for the first approved report.
+            </p>
+          </div>
+        </section>
+      )}
+
+      {weekly.length ? (
+        <section className="mt-12">
+          <SectionHeader title="Weekly Reports" />
+          <div className="grid gap-8 md:grid-cols-3">
+            {weekly.map((story) => (
+              <StoryCard key={story.slug} story={story} href={`/this-week/${story.slug}`} />
+            ))}
+          </div>
+        </section>
+      ) : null}
+
       <section className="mt-12 grid gap-8 md:grid-cols-2">
         {["YouTube Videos", "Shorts / Reels"].map((title) => (
           <div key={title} className="border-t border-[var(--line)] pt-4">

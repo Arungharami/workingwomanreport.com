@@ -1,4 +1,5 @@
 import type { Metadata } from "next";
+import Image from "next/image";
 import Link from "next/link";
 import { ButtonLink, SectionHeader } from "@/components/ui";
 import { EditorialEmptyState } from "@/components/empty-state";
@@ -28,25 +29,37 @@ export default function ShowPage() {
 
   return (
     <div>
-      <section className="border-b border-[var(--line)] bg-[var(--foreground)] py-14 text-[var(--background)]">
-        <div className="container-shell">
-          <p className="text-xs font-semibold uppercase tracking-[0.2em] opacity-70">
-            The Show
-          </p>
-          <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-[0.98] md:text-7xl">
-            Working Woman Report
-          </h1>
-          <p className="mt-3 text-xl opacity-85">with Allison Haunss</p>
-          <p className="mt-5 max-w-2xl text-lg leading-8 opacity-85">
-            A television and editorial newsroom exploring female-inspired business and
-            entrepreneurship — one authoritative weekly reporting package, adapted for every
-            channel.
-          </p>
-          <div className="mt-7 flex flex-wrap gap-3">
-            <ButtonLink href="/watch">Watch Latest</ButtonLink>
-            <ButtonLink href="/show/archive" variant="secondary">
-              Show Archive
-            </ButtonLink>
+      <section className="border-b border-[var(--line)] bg-[var(--foreground)] text-[var(--background)]">
+        <div className="container-shell grid gap-10 py-14 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+          <div>
+            <p className="text-xs font-semibold uppercase tracking-[0.2em] opacity-70">
+              The Show
+            </p>
+            <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-[0.98] md:text-7xl">
+              Working Woman Report
+            </h1>
+            <p className="mt-3 text-xl opacity-85">with Allison Haunss</p>
+            <p className="mt-5 max-w-2xl text-lg leading-8 opacity-85">
+              A television and editorial newsroom exploring female-inspired business and
+              entrepreneurship — one authoritative weekly reporting package, adapted for every
+              channel.
+            </p>
+            <div className="mt-7 flex flex-wrap gap-3">
+              <ButtonLink href="/watch">Watch Latest</ButtonLink>
+              <ButtonLink href="/show/archive" variant="secondary">
+                Show Archive
+              </ButtonLink>
+            </div>
+          </div>
+          <div className="relative aspect-[16/10] overflow-hidden">
+            <Image
+              src="/images/show-hero.svg"
+              alt="Working Woman Report broadcast set illustration"
+              fill
+              priority
+              sizes="(max-width: 1024px) 100vw, 46vw"
+              className="object-cover"
+            />
           </div>
         </div>
       </section>

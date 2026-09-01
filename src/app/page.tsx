@@ -1,6 +1,5 @@
 import Image from "next/image";
 import Link from "next/link";
-import { EditorialEmptyState } from "@/components/empty-state";
 import { NewsletterSignup } from "@/components/newsletter-signup";
 import { StoryCard } from "@/components/story-card";
 import { ButtonLink, Eyebrow, SectionHeader } from "@/components/ui";
@@ -20,28 +19,94 @@ export default function Home() {
   if (!weekly) {
     return (
       <>
-        <EditorialEmptyState />
-        <section className="container-shell py-8">
-          <SectionHeader
-            eyebrow="Preparation"
-            title="One Topic. One Canonical Story. Every Channel."
-            dek="The production system is ready for the first approved weekly report, video package, newsletter summary, and social distribution kit."
-          />
+        <section className="border-b border-[var(--line)] py-14">
+          <div className="container-shell grid gap-10 lg:grid-cols-[1.05fr_0.95fr] lg:items-center">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+                Editorial Desk
+              </p>
+              <h1 className="mt-4 max-w-3xl font-serif text-5xl leading-none md:text-7xl">
+                One Topic. One Canonical Story. Every Channel.
+              </h1>
+              <p className="mt-5 max-w-xl text-lg leading-8 text-[var(--ink-muted)]">
+                The newsroom is ready for Allison&rsquo;s first approved weekly package. Demo
+                records remain available in Studio and tests, but they are not shown as public
+                journalism.
+              </p>
+              <div className="mt-7 flex flex-wrap gap-3">
+                <ButtonLink href="/about">About the newsroom</ButtonLink>
+                <ButtonLink href="/show" variant="secondary">
+                  About the show
+                </ButtonLink>
+              </div>
+            </div>
+            <div className="relative aspect-[16/11] overflow-hidden">
+              <Image
+                src="/images/newsroom-weekly.svg"
+                alt="Working Woman Report editorial newsroom illustration"
+                fill
+                priority
+                sizes="(max-width: 1024px) 100vw, 48vw"
+                className="object-cover"
+              />
+            </div>
+          </div>
         </section>
+
         {showRecord ? (
-          <section className="container-shell border-t border-[var(--line)] py-10">
-            <SectionHeader eyebrow="The Show" title="Working Woman Report, on Television" />
-            <p className="max-w-2xl text-sm leading-7 text-[var(--ink-muted)]">
-              A half-hour lifestyle show exploring female-inspired businesses and
-              entrepreneurship, hosted by Allison Haunss.
-            </p>
-            <div className="mt-5">
-              <ButtonLink href="/show" variant="secondary">
-                About the show
-              </ButtonLink>
+          <section className="border-b border-[var(--line)] bg-[var(--paper)] py-12">
+            <div className="container-shell grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
+              <div className="relative aspect-[16/10] overflow-hidden">
+                <Image
+                  src="/images/show-hero.svg"
+                  alt="Working Woman Report broadcast set illustration"
+                  fill
+                  sizes="(max-width: 1024px) 100vw, 44vw"
+                  className="object-cover"
+                />
+              </div>
+              <div>
+                <SectionHeader
+                  eyebrow="The Show"
+                  title="Working Woman Report, on Television"
+                />
+                <p className="max-w-lg text-sm leading-7 text-[var(--ink-muted)]">
+                  A half-hour lifestyle show exploring female-inspired businesses and
+                  entrepreneurship, hosted by Allison Haunss.
+                </p>
+                <div className="mt-5">
+                  <ButtonLink href="/show" variant="secondary">
+                    About the show
+                  </ButtonLink>
+                </div>
+              </div>
             </div>
           </section>
         ) : null}
+
+        {archiveSample.length ? (
+          <section className="container-shell py-12">
+            <SectionHeader
+              eyebrow="From the Archive"
+              title="A Decade of Reporting"
+              dek={`Working Woman Report published from ${archiveYears[archiveYears.length - 1]} to ${archiveYears[0]}. Metadata only — full archive review is ongoing.`}
+            />
+            <ul className="grid gap-3 sm:grid-cols-2 lg:grid-cols-4">
+              {archiveSample.map((record) => (
+                <li key={record.originalUrl} className="border border-[var(--line)] p-4">
+                  <p className="text-xs text-[var(--ink-muted)]">
+                    {formatDate(record.publishedDate)}
+                  </p>
+                  <p className="mt-1 text-sm font-medium leading-snug">{record.title}</p>
+                </li>
+              ))}
+            </ul>
+            <Link href="/archive" className="mt-5 inline-block underline">
+              Browse the full archive
+            </Link>
+          </section>
+        ) : null}
+
         <section className="container-shell py-10">
           <NewsletterSignup />
         </section>

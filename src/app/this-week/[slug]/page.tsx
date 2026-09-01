@@ -11,7 +11,7 @@ import { Eyebrow, SectionHeader } from "@/components/ui";
 import { VideoEmbed } from "@/components/video-embed";
 import { getPublishedStories, getPublishedWeeklyStories, getWeeklyStory } from "@/lib/content";
 import { formatDate } from "@/lib/format";
-import { articleJsonLd, videoJsonLd } from "@/lib/seo";
+import { articleJsonLd, breadcrumbJsonLd, videoJsonLd } from "@/lib/seo";
 
 type Props = { params: Promise<{ slug: string }> };
 
@@ -55,6 +55,13 @@ export default async function WeeklyStoryPage({ params }: Props) {
     <article>
       <JsonLd data={articleJsonLd(story, `/this-week/${story.slug}`)} />
       <JsonLd data={videoJsonLd(story)} />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: "This Week", path: "/this-week" },
+          { name: story.title, path: `/this-week/${story.slug}` },
+        ])}
+      />
       <div className="container-shell py-8">
         <nav className="text-sm text-[var(--ink-muted)]" aria-label="Breadcrumb">
           <Link href="/">Home</Link> / <Link href="/this-week">This Week</Link>

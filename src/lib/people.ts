@@ -17,6 +17,14 @@ const personSchema = z.object({
   featuredStories: z.array(z.string()),
   verifiedBio: z.array(z.string()),
   placeholders: z.array(z.string()),
+  historicalBio: z
+    .object({
+      source: z.string(),
+      sourceDate: z.string(),
+      paragraphs: z.array(z.string()),
+      caveat: z.string(),
+    })
+    .optional(),
 });
 
 export type PersonProfile = z.infer<typeof personSchema>;

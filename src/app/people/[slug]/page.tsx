@@ -5,6 +5,7 @@ import { notFound } from "next/navigation";
 import { JsonLd } from "@/components/json-ld";
 import { SectionHeader } from "@/components/ui";
 import { getPeople, getPerson } from "@/lib/people";
+import { breadcrumbJsonLd } from "@/lib/seo";
 import { siteConfig } from "@/lib/site";
 
 type Props = { params: Promise<{ slug: string }> };
@@ -46,6 +47,12 @@ export default async function PersonPage({ params }: Props) {
           sameAs: Object.values(person.socials),
         }}
       />
+      <JsonLd
+        data={breadcrumbJsonLd([
+          { name: "Home", path: "/" },
+          { name: person.name, path: `/people/${person.slug}` },
+        ])}
+      />
       <nav className="text-sm text-[var(--ink-muted)]" aria-label="Breadcrumb">
         <Link href="/">Home</Link> / People
       </nav>
@@ -57,6 +64,22 @@ export default async function PersonPage({ params }: Props) {
           ))}
           <h2>Coverage Areas</h2>
           <p>{person.areasOfCoverage.join(", ")}.</p>
+
+          {person.historicalBio ? (
+            <>
+              <h2>Historical Biography</h2>
+              <p className="not-prose border-l-2 border-[var(--accent)] pl-4 text-xs uppercase tracking-[0.1em] text-[var(--ink-muted)]">
+                From the show&rsquo;s own record, {person.historicalBio.sourceDate} — not
+                confirmed as current
+              </p>
+              {person.historicalBio.paragraphs.map((paragraph) => (
+                <p key={paragraph}>{paragraph}</p>
+              ))}
+              <p className="text-sm italic text-[var(--ink-muted)]">
+                {person.historicalBio.caveat}
+              </p>
+            </>
+          ) : null}
         </section>
         <aside className="space-y-8">
           {person.photo ? (

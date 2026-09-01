@@ -1,14 +1,28 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 import { StudioPanel } from "@/components/studio-panel";
+import { LegacyMigrationPanel } from "@/components/legacy-migration-panel";
 import { getCurrentStudioWeeklyStory, getSocialPackage } from "@/lib/content";
+import {
+  getMigrationSummary,
+  queryStudioArchive,
+  type LegacyClassification,
+} from "@/lib/legacy";
 
 export const metadata: Metadata = {
   title: "Studio",
   robots: { index: false, follow: false },
 };
 
-export default function StudioPage() {
+type Props = {
+  searchParams: Promise<{
+    legacyPage?: string;
+    legacyClassification?: string;
+    legacyQuery?: string;
+  }>;
+};
+
+export default async function StudioPage({ searchParams }: Props) {
   const enabled = process.env.ENABLE_STUDIO === "true";
 
   if (!enabled) {
@@ -27,24 +41,16 @@ export default function StudioPage() {
     );
   }
 
+  const params = await searchParams;
+  const summary = getMigrationSummary();
+  const legacyResult = queryStudioArchive({
+    page: Number(params.legacyPage ?? "1") || 1,
+    classification: params.legacyClassification as LegacyClassification | undefined,
+    query: params.legacyQuery,
+  });
+
   const story = getCurrentStudioWeeklyStory();
-  if (!story) {
-    return (
-      <div className="container-shell py-10">
-        <h1 className="font-serif text-5xl">No weekly package found</h1>
-      </div>
-    );
-  }
-
-  const socialPackage = getSocialPackage(story.slug);
-
-  if (!socialPackage) {
-    return (
-      <div className="container-shell py-10">
-        <h1 className="font-serif text-5xl">Social package missing</h1>
-      </div>
-    );
-  }
+  const socialPackage = story ? getSocialPackage(story.slug) : undefined;
 
   return (
     <div className="container-shell py-10">
@@ -56,8 +62,35 @@ export default function StudioPage() {
         No automatic posting happens here. This screen prepares copy, metadata, accessibility
         checks, and Allison approval before publishing.
       </p>
-      <div className="mt-10">
-        <StudioPanel story={story} socialPackage={socialPackage} />
+
+      {story && socialPackage ? (
+        <div className="mt-10">
+          <StudioPanel story={story} socialPackage={socialPackage} />
+        </div>
+      ) : (
+        <div className="mt-10 border border-[var(--line)] bg-[var(--paper)] p-6">
+          <h2 className="font-serif text-2xl">
+            {story ? "Social package missing" : "No weekly package found"}
+          </h2>
+        </div>
+      )}
+
+      <div className="mt-16 border-t-2 border-[var(--accent)] pt-8">
+        <p className="text-xs font-semibold uppercase tracking-[0.18em] text-[var(--accent)]">
+          Internal — Not Public
+        </p>
+        <h2 className="mt-3 font-serif text-4xl">Legacy Migration</h2>
+        <p className="mt-3 max-w-3xl text-sm leading-6 text-[var(--ink-muted)]">
+          Full audit of the legacy workingwomanreport.com WordPress archive. This screen is
+          gated behind ENABLE_STUDIO and never shows to public visitors — see
+          docs/legacy-migration-report.md for the narrative writeup.
+        </p>
+        <LegacyMigrationPanel
+          summary={summary}
+          result={legacyResult}
+          currentClassification={params.legacyClassification}
+          currentQuery={params.legacyQuery}
+        />
       </div>
     </div>
   );

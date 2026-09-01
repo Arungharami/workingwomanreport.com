@@ -58,6 +58,16 @@ export const navItems = [
   { href: "/contact", label: "Contact" },
 ] as const;
 
+// Secondary/archive navigation — kept out of the primary header so it stays
+// uncluttered, surfaced instead in the footer and on relevant hub pages.
+export const secondaryNavItems = [
+  { href: "/show", label: "The Show" },
+  { href: "/show/daily-news", label: "Daily News" },
+  { href: "/show/success-stories", label: "Success Stories" },
+  { href: "/archive", label: "Archive" },
+  { href: "/search", label: "Search" },
+] as const;
+
 export const categories = [
   "Business",
   "Money",

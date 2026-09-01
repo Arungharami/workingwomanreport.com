@@ -1,0 +1,44 @@
+{
+  "baseUrl": "https://workingwomanreport.com",
+  "generatedAt": "2026-09-01T17:47:37.162Z",
+  "totalReportedByApi": 13626,
+  "totalFetched": 13099,
+  "failedPages": 0,
+  "byMimeType": {
+    "image/jpeg": 12757,
+    "image/png": 322,
+    "text/plain": 1,
+    "image/tiff": 3,
+    "image/gif": 10,
+    "application/zip": 4,
+    "application/pdf": 2
+  },
+  "byYear": {
+    "2013": 150,
+    "2014": 2497,
+    "2015": 1967,
+    "2016": 1995,
+    "2017": 1801,
+    "2018": 1459,
+    "2019": 1397,
+    "2020": 1052,
+    "2021": 662,
+    "2022": 96,
+    "2023": 23
+  },
+  "note": "This is a metadata inventory only. Bulk media was NOT downloaded \u2014 most items are attached to syndicated wire posts (Tribune Content Agency and similar) whose image rights were never Working Woman Report's. Only the confirmed brand logo below was migrated by hand after manual verification. The confirmed brand logo (logo-1-2.png) does not appear in the media CPT listing above \u2014 it was uploaded through the theme customizer rather than the standard media library \u2014 so it required direct verification and was added to this manifest by hand.",
+  "ownedAndMigrated": [
+    {
+      "legacyUrl": "https://workingwomanreport.com/wp-content/uploads/2022/05/logo-1-2.png",
+      "filename": "logo-1-2.png",
+      "mimeType": "image/png",
+      "dimensions": "370x140",
+      "associatedPost": null,
+      "usage": "site brand logo (uploaded via theme customizer, not the WP media library \u2014 not discoverable through the /wp-json/wp/v2/media pagination; verified and fetched directly)",
+      "copyrightStatus": "owned",
+      "migrationStatus": "migrated",
+      "newPath": "/media/legacy/brand/logo-1-2.png",
+      "checksum": "content-length 24186 bytes, last-modified 2022-09-14T02:34:50Z (verified via direct HTTP HEAD)"
+    }
+  ]
+}

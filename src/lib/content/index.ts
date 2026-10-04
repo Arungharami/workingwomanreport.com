@@ -9,6 +9,7 @@ import {
   type WeeklyStory,
 } from "./schema";
 import { getPeople } from "@/lib/people";
+import { isPublicContent } from "./visibility";
 
 const contentRoot = path.join(process.cwd(), "content");
 
@@ -38,7 +39,8 @@ export function getWeeklyStories(): WeeklyStory[] {
 }
 
 export function getPublishedWeeklyStories(): WeeklyStory[] {
-  return getWeeklyStories().filter((story) => story.status === "published" && !story.isDemo);
+  const now = new Date();
+  return getWeeklyStories().filter((story) => isPublicContent(story, now));
 }
 
 export function getCurrentWeeklyStory(): WeeklyStory | undefined {
@@ -66,7 +68,8 @@ export function getStories(): Story[] {
 }
 
 export function getPublishedStories(): Story[] {
-  return getStories().filter((story) => story.status === "published" && !story.isDemo);
+  const now = new Date();
+  return getStories().filter((story) => isPublicContent(story, now));
 }
 
 export function getStory(slug: string): Story | undefined {

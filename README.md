@@ -118,3 +118,7 @@ AI can assist drafting and preparation. It is not the journalist. Do not
 fabricate quotes, statistics, sources, interviews, events, credentials, or image
 rights. Important factual claims must be reviewable against source material.
 Allison has final editorial approval.
+
+## Engineering review
+
+See [the October 4 correctness review](docs/ENGINEERING_REVIEW_2026-10-04.md) for repairs, exact verification results, and the next implementation work.

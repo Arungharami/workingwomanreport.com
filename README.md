@@ -1,5 +1,11 @@
 # Working Woman Report
 
+## Start here
+
+Use the development instructions below and [contributor guidance](CONTRIBUTING.md). The canonical weekly story drives the distribution workflow; provider adapters do not automatically publish without configuration.
+
+**Help improve this project:** [Contribution guide](CONTRIBUTING.md) · [Issues](https://github.com/Arungharami/workingwomanreport.com/issues)
+
 Working Woman Report is a modern digital television and editorial newsroom for
 women-focused business, careers, money, lifestyle, health, technology,
 entertainment, and success coverage.
